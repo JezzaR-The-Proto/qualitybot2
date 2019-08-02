@@ -39,24 +39,41 @@ client.on('kick', message => {
   }
 })
 
-client.on('message', message=> {
-	if (message.content.startsWith('!ban')) {
-		const member = message.mentions.members.first()
+const Discord = require('discord.js');
 
-    if (!member) {
-      return message.reply(
-        `Who are you trying to ban? You must mention a user.`
-      )
+// Create an instance of a Discord client
+const client = new Discord.Client();
+
+/**
+ * The ready event is vital, it means that only _after_ this will your bot start reacting to information
+ * received from Discord
+ */
+client.on('ready', () => {
+  console.log('I am ready!');
+});
+
+client.on('message', message => {
+  if (!message.guild) return;
+  if (message.content.startsWith('!ban')) {
+    const user = message.mentions.users.first();
+    if (user) {
+      const member = message.guild.member(user);
+      if (member) {
+        member.ban({
+          reason: 'They were bad!',
+        }).then(() => {
+          message.reply(`Successfully banned ${user.tag}`);
+        }).catch(err => {
+          message.reply('I was unable to ban the member');
+          console.error(err);
+        });
+      } else {
+        message.reply('That user isn\'t in this guild!');
+      }
+    } else {
+      message.reply('You didn\'t mention the user to ban!');
     }
-
-    if (!member.banable) {
-      return message.reply(`I can't ban this user. Sorry!`)
-    }
-
-    return member
-      .ban()
-      .then(() => message.reply(`${member.user.tag} was banned.`))
-      .catch(error => message.reply(`Sorry, an error occured.`))
   }
-})
+});
+
 client.login(process.env.BOT_TOKEN)
