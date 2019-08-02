@@ -97,4 +97,12 @@ client.on('message', msg => {
 		msg.channel.send('you are beyond help')
   }
 })
+
+client.on('message', msg => {
+  if (msg.content === '!praise') {
+		msg.channel.send('PRAISE LORD AND SAVIOUR @QualityBot V2#0474')
+		msg.channel.send('PRAISE THE ORB')
+		msg.channel.send('PRAISE NEIL')
+  }
+})
 client.login(process.env.BOT_TOKEN)
