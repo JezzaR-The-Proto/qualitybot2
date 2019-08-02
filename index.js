@@ -105,17 +105,4 @@ client.on('message', msg => {
 		msg.channel.send('PRAISE NEIL')
   }
 })
-
-client.on("message", msg => {
-	if (msg.content === '!vc') {
-		const channel = client.channels.get("606899936625426436");
-			if (!channel) return console.error("The channel does not exist!");
-			channel.join().then(connection => {
-			// Yay, it worked!
-			console.log("Successfully connected.");
-			}).catch(e => {
-			// Oh no, it errored! Let's log it to console :)
-			console.error(e);
-  });
-});
 client.login(process.env.BOT_TOKEN)
