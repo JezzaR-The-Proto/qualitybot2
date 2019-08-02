@@ -6,7 +6,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`)
 })
 
-client.on('message', msg => {
+client.on('ping', msg => {
   if (msg.content === '!ping') {
     msg.reply('Pong!')
   }
@@ -27,11 +27,9 @@ client.on('kick', message => {
         `Who are you trying to kick? You must mention a user.`
       )
     }
-
     if (!member.kickable) {
       return message.reply(`I can't kick this user. Sorry!`)
     }
-
     return member
       .kick()
       .then(() => message.reply(`${member.user.tag} was kicked.`))
@@ -39,7 +37,7 @@ client.on('kick', message => {
   }
 })
 
-client.on('message', message => {
+client.on('ban', message => {
   if (!message.guild) return;
   if (message.content.startsWith('!ban')) {
     const user = message.mentions.users.first();
