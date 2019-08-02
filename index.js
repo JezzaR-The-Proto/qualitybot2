@@ -7,7 +7,7 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
+  if (msg.content === '!ping') {
     msg.reply('Pong!')
   }
 })
@@ -18,7 +18,7 @@ client.on('guildMemberAdd', member => {
   )
 })
 
-client.on('message', message => {
+client.on('kick', message => {
   if (message.content.startsWith('!kick')) {
     const member = message.mentions.members.first()
 
@@ -39,4 +39,24 @@ client.on('message', message => {
   }
 })
 
+client.on('message', message=> {
+	if (message.content.startsWith('!ban')) {
+		const member = message.mentions.members.first()
+
+    if (!member) {
+      return message.reply(
+        `Who are you trying to ban? You must mention a user.`
+      )
+    }
+
+    if (!member.kickable) {
+      return message.reply(`I can't ban this user. Sorry!`)
+    }
+
+    return member
+      .ban()
+      .then(() => message.reply(`${member.user.tag} was banned.`))
+      .catch(error => message.reply(`Sorry, an error occured.`))
+  }
+})
 client.login(process.env.BOT_TOKEN)
