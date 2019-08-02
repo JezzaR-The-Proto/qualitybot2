@@ -49,7 +49,7 @@ client.on('message', message=> {
       )
     }
 
-    if (!member.kickable) {
+    if (!member.banable) {
       return message.reply(`I can't ban this user. Sorry!`)
     }
 
