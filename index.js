@@ -9,6 +9,8 @@
 //v30 - changed prefix to &
 //v31 - just testing
 //v32 - changed &ping to actual ping command and removed test
+//v33 - fixed &ping 
+//v34 - changed join message
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -29,7 +31,7 @@ client.on("message", message => { // EventEmitter
 
 client.on('guildMemberAdd', member => {
   member.send(
-    `Welcome on the server! Please be aware that we won't tolerate troll, spam or harassment. Have fun 😀`
+    `Welcome pls enjoy pure quality content`
   )
 })
 
