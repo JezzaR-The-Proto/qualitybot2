@@ -139,4 +139,16 @@ client.on('message', msg => {
   }
 })
 
+client.on('message', msg => {
+  if (msg.content === '&qualitybotv2') {
+		msg.channel.send('yes thats me')
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === '&qualitybot') {
+		msg.channel.send('no thats not me thats the original you should know this')
+  }
+})
+
 client.login(process.env.BOT_TOKEN)
