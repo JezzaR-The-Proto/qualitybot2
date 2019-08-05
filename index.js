@@ -104,7 +104,6 @@ client.on('message', msg => {
 		msg.channel.send('PRAISE THE ORB')
 		msg.channel.send('PRAISE NEIL')
 		msg.channel.send('PRAISE CHRISTOPHER');
-		msg.channel.send(attachment);
   }
 })
 
