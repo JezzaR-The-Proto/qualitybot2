@@ -103,8 +103,9 @@ client.on('message', msg => {
 		msg.channel.send('PRAISE LORD AND SAVIOUR @QualityBot V2#0474')
 		msg.channel.send('PRAISE THE ORB')
 		msg.channel.send('PRAISE NEIL')
-		msg.channel.send('PRAISE CHRISTOPHER')
-		msg.channel.send('https://media.discordapp.net/attachments/423208027034877962/608024065181089818/image0.jpg')
+		msg.channel.send("PRAISE CHRISTOPHER", {
+			file: "https://media.discordapp.net/attachments/423208027034877962/608024065181089818/image0.jpg" 
+		});
   }
 })
 
