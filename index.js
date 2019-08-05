@@ -1,9 +1,11 @@
-//v23 - removed a line that crashed the .js
+//=-=-=-=-=-=-=-= Changelog =-=-=-=-=-=-=-=
+//v23 - removed a line that crashed the .js and added changelog
 //v24 - added &bitrate
 //v25 - added &neil and &christopher
 //v26 - added &qualitybot and &qualitybotv2
 //v27 - updated &helps
 //v28 - removed &helps
+//v29 - added &kurwa
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -140,6 +142,12 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === '&qualitybot') {
 		msg.channel.send('no thats not me thats the original you should know this')
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === '&kurwa') {
+		msg.channel.send('**FRICK**')
   }
 })
 
