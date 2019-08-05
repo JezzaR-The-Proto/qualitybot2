@@ -43,6 +43,7 @@ var h = 0
 
 client.on('ready', () => {
   console.log(`Logged in as QualityBot V2#0474!`)
+  client.user.setActivity('for commands. &helpme', { type: 'WATCHING' });   
 })
 
 client.on("message", message => { // EventEmitter
@@ -186,7 +187,23 @@ client.on('message', msg => {
 
 client.on('message', msg => {
 	if (msg.content === '&helpme') {
-		msg.channel.send(helpembed);
+/*		if (permissions & 0x00004000 == true) {
+			msg.channel.send(helpembed);
+		}*/
+		msg.channel.send('=-= QUALITYBOT V2 HELP =-=');
+		msg.channel.send('&ping - Check bot ping.');
+		msg.channel.send('&kick - Kick someone');
+		msg.channel.send('&ban - Ban someone');
+		msg.channel.send('&h - h');
+		msg.channel.send('&help - help me');
+		msg.channel.send('&praise - PRAISE');
+		msg.channel.send('&bitrate - owo bitrate-san uwu');
+		msg.channel.send('&neil - neil neil neil');
+		msg.channel.send('&christopher - christopher op');
+		msg.channel.send('&qualitybot - quality content');
+		msg.channel.send('&qualitybotv2 - unoriginal content');
+		msg.channel.send('&kurwa - **KURWA**');
+		msg.channel.send('Made by @JezzaR#6483');
 	}
 })
 
