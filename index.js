@@ -6,6 +6,7 @@
 //v27 - updated &helps
 //v28 - removed &helps
 //v29 - added &kurwa
+//v30 - changed prefix to $
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -16,7 +17,7 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  if (msg.content === '&ping') {
+  if (msg.content === '$ping') {
     msg.channel.send('pong')
   }
 })
@@ -28,7 +29,7 @@ client.on('guildMemberAdd', member => {
 })
 
 client.on('message', message => {
-  if (message.content.startsWith('&kick')) {
+  if (message.content.startsWith('$kick')) {
     const member = message.mentions.members.first()
 
     if (!member) {
@@ -53,7 +54,7 @@ client.on('message', message => {
   if (!message.guild) return;
 
   // if the message content starts with "!ban"
-  if (message.content.startsWith('&ban')) {
+  if (message.content.startsWith('$ban')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
     const user = message.mentions.users.first();
@@ -95,19 +96,19 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '&h') {
+  if (msg.content === '$h') {
 		msg.channel.send('h')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '&help') {
+  if (msg.content === '$help') {
 		msg.channel.send('you are beyond help')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '&praise') {
+  if (msg.content === '$praise') {
 		msg.channel.send('PRAISE LORD AND SAVIOUR @QualityBot V2#0474')
 		msg.channel.send('PRAISE THE ORB')
 		msg.channel.send('PRAISE NEIL')
@@ -116,37 +117,37 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
-  if (msg.content === '&bitrate') {
+  if (msg.content === '$bitrate') {
 		msg.channel.send('GIVE ME ALL YOUR JUICY DATA')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '&neil') {
+  if (msg.content === '$neil') {
 		msg.channel.send('may neil praise you')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '&christopher') {
+  if (msg.content === '$christopher') {
 		msg.channel.send('christopher is love christopher is life')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '&qualitybotv2') {
+  if (msg.content === '$qualitybotv2') {
 		msg.channel.send('yes thats me')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '&qualitybot') {
+  if (msg.content === '$qualitybot') {
 		msg.channel.send('no thats not me thats the original you should know this')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '&kurwa') {
+  if (msg.content === '$kurwa') {
 		msg.channel.send('**FRICK**')
   }
 })
