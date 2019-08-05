@@ -13,6 +13,7 @@
 //v34 - changed join message
 //v35 - added real &helpme
 //v36 - huge &helpme overhall
+//v37 - forgot to save v36...
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
