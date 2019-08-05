@@ -3,6 +3,7 @@
 //v25 - added &neil and &christopher
 //v26 - added &qualitybot and &qualitybotv2
 //v27 - updated &helps
+//v28 - removed &helps
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -109,22 +110,6 @@ client.on('message', msg => {
 		msg.channel.send('PRAISE THE ORB')
 		msg.channel.send('PRAISE NEIL')
 		msg.channel.send('PRAISE CHRISTOPHER');
-  }
-})
-
-client.on('message', msg => {
-  if (msg.content === '&helps') {
-		msg.channel.send('&praise')
-		msg.channel.send('&ban')
-		msg.channel.send('&kick')
-		msg.channel.send('&h')
-		msg.channel.send('&help')
-		msg.channel.send('&ping')
-		msg.channel.send('&bitrate')
-		msg.channel.send('&neil')
-		msg.channel.send('&christopher')
-		msg.channel.send('&qualitybot')
-		msg.channel.send('&qualitybotv2')
   }
 })
 
