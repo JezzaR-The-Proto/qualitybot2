@@ -1,6 +1,7 @@
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
+const attachment = new Attachment('https://media.discordapp.net/attachments/423208027034877962/608024065181089818/image0.jpg');
 var h = 0
 
 client.on('ready', () => {
@@ -104,6 +105,7 @@ client.on('message', msg => {
 		msg.channel.send('PRAISE THE ORB')
 		msg.channel.send('PRAISE NEIL')
 		msg.channel.send('PRAISE CHRISTOPHER');
+		msg.channel.send(attachment);
   }
 })
 
