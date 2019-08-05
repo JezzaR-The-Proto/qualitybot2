@@ -16,6 +16,8 @@
 //v37 - forgot to save v36...
 //v38 - more h
 //v39 - less h
+//v40 - added the classic &helpme back until i get embed perms.
+//v41 - didnt update v40 changelog...
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
