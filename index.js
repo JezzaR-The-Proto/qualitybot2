@@ -11,6 +11,7 @@
 //v32 - changed &ping to actual ping command and removed test
 //v33 - fixed &ping 
 //v34 - changed join message
+//v35 - added real &helpme
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -31,7 +32,7 @@ client.on("message", message => { // EventEmitter
 
 client.on('guildMemberAdd', member => {
   member.send(
-    `Welcome pls enjoy pure quality content`
+    `welcome pls enjoy pure quality content`
   )
 })
 
@@ -159,4 +160,12 @@ client.on('message', msg => {
   }
 })
 
+client.on('message', msg => {
+  if (msg.content === '&helpme') {
+		msg.channel.send({embed: {
+		color: 3447003,
+		description: "```&ping - Check bot ping.\n&kick [@someone]- Kick someone.\n&ban [@someone} - Ban someone.\n&h - h.\n&help - help.\n&praise - PRAISE.\n&bitrate - Bitrate.\n&neil - neil neil neil.\n&christopher - christopher op.\n&qualitybot - quality content.\n&qualitybotv2 - unoriginal content.\n&kurwa - KURWA```"
+	}});
+  }
+})
 client.login(process.env.BOT_TOKEN)
