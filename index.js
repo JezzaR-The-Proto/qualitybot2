@@ -8,7 +8,7 @@ client.on('ready', () => {
 })
 
 client.on('message', msg => {
-  if (msg.content === '!ping') {
+  if (msg.content === '&ping') {
     msg.channel.send('pong')
   }
 })
@@ -20,7 +20,7 @@ client.on('guildMemberAdd', member => {
 })
 
 client.on('message', message => {
-  if (message.content.startsWith('!kick')) {
+  if (message.content.startsWith('&kick')) {
     const member = message.mentions.members.first()
 
     if (!member) {
@@ -45,7 +45,7 @@ client.on('message', message => {
   if (!message.guild) return;
 
   // if the message content starts with "!ban"
-  if (message.content.startsWith('!ban')) {
+  if (message.content.startsWith('&ban')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
     const user = message.mentions.users.first();
@@ -87,22 +87,23 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '!h') {
+  if (msg.content === '&h') {
 		msg.channel.send('h')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '!help') {
+  if (msg.content === '&help') {
 		msg.channel.send('you are beyond help')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '!praise') {
+  if (msg.content === '&praise') {
 		msg.channel.send('PRAISE LORD AND SAVIOUR @QualityBot V2#0474')
 		msg.channel.send('PRAISE THE ORB')
 		msg.channel.send('PRAISE NEIL')
   }
 })
+
 client.login(process.env.BOT_TOKEN)
