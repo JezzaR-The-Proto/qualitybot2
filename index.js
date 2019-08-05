@@ -1,3 +1,6 @@
+//v23 - removed a line that crashed the .js
+//v24 - added &bitrate
+
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -115,6 +118,12 @@ client.on('message', msg => {
 		msg.channel.send('&h')
 		msg.channel.send('&help')
 		msg.channel.send('&ping')
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === '&bitrate') {
+		msg.channel.send('GIVE ME ALL YOUR JUICY DATA')
   }
 })
 
