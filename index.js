@@ -6,21 +6,26 @@
 //v27 - updated &helps
 //v28 - removed &helps
 //v29 - added &kurwa
-//v30 - changed prefix to $
+//v30 - changed prefix to &
+//v31 - just testing
+//v32 - changed &ping to actual ping command and removed test
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
 var h = 0
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`)
+  console.log(`Logged in as &{client.user.tag}!`)
 })
 
-client.on('message', msg => {
-  if (msg.content === '$ping') {
-    msg.channel.send('pong')
-  }
-})
+client.on("message", (message)){ // EventEmitter
+	if(message.content == "&ping"){ // Check if message is "!ping"
+			message.channel.send("Pinging ...") // Placeholder for pinging ... 
+			.then((msg) => { // Resolve promise
+				msg.edit("Ping: " + (Date.now() - msg.createdTimestamp)) // Edits message with current timestamp minus timestamp of message
+			});
+		}
+}
 
 client.on('guildMemberAdd', member => {
   member.send(
@@ -29,7 +34,7 @@ client.on('guildMemberAdd', member => {
 })
 
 client.on('message', message => {
-  if (message.content.startsWith('$kick')) {
+  if (message.content.startsWith('&kick')) {
     const member = message.mentions.members.first()
 
     if (!member) {
@@ -44,7 +49,7 @@ client.on('message', message => {
 
     return member
       .kick()
-      .then(() => message.reply(`${member.user.tag} was kicked.`))
+      .then(() => message.reply(`&{member.user.tag} was kicked.`))
       .catch(error => message.reply(`Sorry, an error occured.`))
   }
 })
@@ -54,7 +59,7 @@ client.on('message', message => {
   if (!message.guild) return;
 
   // if the message content starts with "!ban"
-  if (message.content.startsWith('$ban')) {
+  if (message.content.startsWith('&ban')) {
     // Assuming we mention someone in the message, this will return the user
     // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
     const user = message.mentions.users.first();
@@ -75,7 +80,7 @@ client.on('message', message => {
           reason: 'They were bad!',
         }).then(() => {
           // We let the message author know we were able to ban the person
-          message.reply(`Successfully banned ${user.tag}`);
+          message.reply(`Successfully banned &{user.tag}`);
         }).catch(err => {
           // An error happened
           // This is generally due to the bot not being able to ban the member,
@@ -96,19 +101,19 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '$h') {
+  if (msg.content === '&h') {
 		msg.channel.send('h')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '$help') {
+  if (msg.content === '&help') {
 		msg.channel.send('you are beyond help')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '$praise') {
+  if (msg.content === '&praise') {
 		msg.channel.send('PRAISE LORD AND SAVIOUR @QualityBot V2#0474')
 		msg.channel.send('PRAISE THE ORB')
 		msg.channel.send('PRAISE NEIL')
@@ -117,44 +122,38 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
-  if (msg.content === '$bitrate') {
+  if (msg.content === '&bitrate') {
 		msg.channel.send('GIVE ME ALL YOUR JUICY DATA')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '$neil') {
+  if (msg.content === '&neil') {
 		msg.channel.send('may neil praise you')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '$christopher') {
+  if (msg.content === '&christopher') {
 		msg.channel.send('christopher is love christopher is life')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '$qualitybotv2') {
+  if (msg.content === '&qualitybotv2') {
 		msg.channel.send('yes thats me')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '$qualitybot') {
+  if (msg.content === '&qualitybot') {
 		msg.channel.send('no thats not me thats the original you should know this')
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === '$kurwa') {
+  if (msg.content === '&kurwa') {
 		msg.channel.send('**FRICK**')
-  }
-})
-
-client.on('message', msg => {
-  if (msg.content === '$kurw') {
-		msg.channel.send('``diff help ``diff')
   }
 })
 
