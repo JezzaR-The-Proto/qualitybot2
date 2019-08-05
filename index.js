@@ -127,4 +127,16 @@ client.on('message', msg => {
   }
 })
 
+client.on('message', msg => {
+  if (msg.content === '&neil') {
+		msg.channel.send('may neil praise you')
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === '&christopher') {
+		msg.channel.send('christopher is love christopher is life')
+  }
+})
+
 client.login(process.env.BOT_TOKEN)
