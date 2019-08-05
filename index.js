@@ -15,17 +15,17 @@ const client = new Discord.Client()
 var h = 0
 
 client.on('ready', () => {
-  console.log(`Logged in as &{client.user.tag}!`)
+  console.log(`Logged in as QualityBot V2#0474!`)
 })
 
-client.on("message", (message)){ // EventEmitter
+client.on("message", message => { // EventEmitter
 	if(message.content == "&ping"){ // Check if message is "!ping"
 			message.channel.send("Pinging ...") // Placeholder for pinging ... 
 			.then((msg) => { // Resolve promise
 				msg.edit("Ping: " + (Date.now() - msg.createdTimestamp)) // Edits message with current timestamp minus timestamp of message
 			});
 		}
-}
+})
 
 client.on('guildMemberAdd', member => {
   member.send(
