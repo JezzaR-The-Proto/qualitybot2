@@ -12,9 +12,30 @@
 //v33 - fixed &ping 
 //v34 - changed join message
 //v35 - added real &helpme
+//v36 - huge &helpme overhall
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
+const helpembed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Need some help with commands?')
+	.setAuthor('QualityBot V2 Help Menu', 'https://imgur.com/fiOcMRg.png')
+	.setThumbnail('https://imgur.com/fiOcMRg.png')
+	.addField('&ping', 'Check bot ping.', true)
+	.addField('&kick [@someone]', 'Kick the mentioned person', true)
+	.addField('&ban [@someone]', 'Ban the mentioned person', true)
+	.addField('&h', 'h', true)
+	.addField('&help', 'Help', true)
+	.addField('&praise', 'PRAISE', true)
+	.addField('&bitrate', 'owo bitrate-san uwu', true)
+	.addField('&neil', 'neil neil neil', true)
+	.addField('&christopher', 'christopher op', true)
+	.addField('&qualitybot', 'quality content', true)
+	.addField('&qualitybotv2', 'unoriginal content', true)
+	.addField('&kurwa', '**KURWA**', true)
+	.setImage('https://imgur.com/fiOcMRg.png')
+	.setTimestamp()
+	.setFooter('~Made by @JezzaR#6483~', 'https://imgur.com/fiOcMRg.png');
 var h = 0
 
 client.on('ready', () => {
@@ -161,11 +182,9 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
-  if (msg.content === '&helpme') {
-		msg.channel.send({embed: {
-		color: 3447003,
-		description: "```&ping - Check bot ping.\n&kick [@someone]- Kick someone.\n&ban [@someone} - Ban someone.\n&h - h.\n&help - help.\n&praise - PRAISE.\n&bitrate - Bitrate.\n&neil - neil neil neil.\n&christopher - christopher op.\n&qualitybot - quality content.\n&qualitybotv2 - unoriginal content.\n&kurwa - KURWA```"
-	}});
-  }
+	if (msg.content === '&helpme') {
+		msg.channel.send(helpembed);
+	}
 })
+
 client.login(process.env.BOT_TOKEN)
