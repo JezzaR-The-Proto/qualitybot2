@@ -128,6 +128,7 @@ client.on('message', message => {
 client.on('message', msg => {
   if (msg.content === '&h') {
 		msg.channel.send('h')
+		msg.channel.send('&h')
   }
 })
 
