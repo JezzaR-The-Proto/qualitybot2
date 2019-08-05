@@ -14,7 +14,8 @@
 //v35 - added real &helpme
 //v36 - huge &helpme overhall
 //v37 - forgot to save v36...
-//v38  - more h
+//v38 - more h
+//v39 - less h
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -129,7 +130,6 @@ client.on('message', message => {
 client.on('message', msg => {
   if (msg.content === '&h') {
 		msg.channel.send('h')
-		msg.channel.send('&h')
   }
 })
 
