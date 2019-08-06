@@ -19,6 +19,7 @@
 //v40 - added the classic &helpme back until i get embed perms.
 //v41 - didnt update v40 changelog...
 //v42 - &helpme spams every command and breaks everything. Removed.
+//v43 - added ms to &ping and removed some unnessasary lines in &helpme.
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -53,7 +54,7 @@ client.on("message", message => { // EventEmitter
 	if(message.content == "&ping"){ // Check if message is "!ping"
 			message.channel.send("Pinging ...") // Placeholder for pinging ... 
 			.then((msg) => { // Resolve promise
-				msg.edit("Ping: " + (Date.now() - msg.createdTimestamp)) // Edits message with current timestamp minus timestamp of message
+				msg.edit("Ping: " + (Date.now() - msg.createdTimestamp + "ms")) // Edits message with current timestamp minus timestamp of message
 			});
 		}
 })
@@ -190,9 +191,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
 	if (msg.content === '&helpme') {
-/*		if (permissions & 0x00004000 == true) {
-			msg.channel.send(helpembed);
-		}*/
+		//msg.channel.send(helpembed);
 	}
 })
 
