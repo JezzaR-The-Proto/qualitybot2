@@ -18,6 +18,7 @@
 //v39 - less h
 //v40 - added the classic &helpme back until i get embed perms.
 //v41 - didnt update v40 changelog...
+//v42 - &helpme spams every command and breaks everything. Removed.
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -192,20 +193,6 @@ client.on('message', msg => {
 /*		if (permissions & 0x00004000 == true) {
 			msg.channel.send(helpembed);
 		}*/
-		msg.channel.send('=-= QUALITYBOT V2 HELP =-=');
-		msg.channel.send('&ping - Check bot ping.');
-		msg.channel.send('&kick - Kick someone');
-		msg.channel.send('&ban - Ban someone');
-		msg.channel.send('&h - h');
-		msg.channel.send('&help - help me');
-		msg.channel.send('&praise - PRAISE');
-		msg.channel.send('&bitrate - owo bitrate-san uwu');
-		msg.channel.send('&neil - neil neil neil');
-		msg.channel.send('&christopher - christopher op');
-		msg.channel.send('&qualitybot - quality content');
-		msg.channel.send('&qualitybotv2 - unoriginal content');
-		msg.channel.send('&kurwa - **KURWA**');
-		msg.channel.send('Made by @JezzaR#6483');
 	}
 })
 
