@@ -20,6 +20,8 @@
 //v41 - didnt update v40 changelog...
 //v42 - &helpme spams every command and breaks everything. Removed.
 //v43 - added ms to &ping and removed some unnessasary lines in &helpme.
+//v44 - added &creeper.							aw man
+//v45 - fixed some grammar in &creeper and added it to &helpme
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -40,6 +42,7 @@ const helpembed = new Discord.RichEmbed()
 	.addField('&qualitybot', 'quality content', true)
 	.addField('&qualitybotv2', 'unoriginal content', true)
 	.addField('&kurwa', '**KURWA**', true)
+	.addField('&creeper', 'aw man', true)
 	.setImage('https://imgur.com/fiOcMRg.png')
 	.setTimestamp()
 	.setFooter('~Made by @JezzaR#6483~', 'https://imgur.com/fiOcMRg.png');
@@ -199,7 +202,7 @@ client.on('message', msg => {
 	if (msg.content === '&creeper') {
 		msg.channel.send("Aw man")
 		msg.channel.send("So we back in the mine")
-		msg.channel.send(", got our pick axe swinging side to side")
+		msg.channel.send("got our pick axe swinging side to side")
 		msg.channel.send("Side-side to side")
 		msg.channel.send("This task a grueling one")
 		msg.channel.send("hope to find some diamonds tonight")
