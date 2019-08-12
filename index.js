@@ -24,6 +24,7 @@
 //v45 - fixed some grammar in &creeper and added it to &helpme
 //v46 - removed &creeper - caused too much lag
 //v47 - enabled &helpme
+//v48 - removed &creeper from help
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -44,7 +45,6 @@ const helpembed = new Discord.RichEmbed()
 	.addField('&qualitybot', 'quality content', true)
 	.addField('&qualitybotv2', 'unoriginal content', true)
 	.addField('&kurwa', '**KURWA**', true)
-	.addField('&creeper', 'aw man', true)
 	.setImage('https://imgur.com/fiOcMRg.png')
 	.setTimestamp()
 	.setFooter('~Made by @JezzaR#6483~', 'https://imgur.com/fiOcMRg.png');
