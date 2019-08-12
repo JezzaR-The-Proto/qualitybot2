@@ -25,6 +25,8 @@
 //v46 - removed &creeper - caused too much lag
 //v47 - enabled &helpme
 //v48 - removed &creeper from help
+//v49 - added needed perms for &kick
+//v50 - added needed perms for &ban and updated needed perms for &kick
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -73,7 +75,7 @@ client.on('guildMemberAdd', member => {
 client.on('message', message => {
   if (message.content.startsWith('&kick')) {
     const member = message.mentions.members.first()
-	let staffrole = ['431473913634226187', '431473986619179019', '604662967556112384'];
+	let staffrole = ['431474051383296001'];
         for(i=0;i<staffrole.length;i++) {
             if(message.member.roles.filter((role) => role.id == staffrole[i]).size > 0) {
                 if (!member) {
@@ -91,55 +93,39 @@ client.on('message', message => {
 					.then(() => message.reply(member + "was kicked."))
 					.catch(error => message.reply(`Sorry, an error occured.`))
 					return;
-            }
+            } else {
+				message.reply("You do not have permission to kick")
+			}
         }
 	}
 })
 
 client.on('message', message => {
-  // Ignore messages that aren't from a guild
-  if (!message.guild) return;
-
-  // if the message content starts with "!ban"
   if (message.content.startsWith('&ban')) {
-    // Assuming we mention someone in the message, this will return the user
-    // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
-    const user = message.mentions.users.first();
-    // If we have a user mentioned
-    if (user) {
-      // Now we get the member from the user
-      const member = message.guild.member(user);
-      // If the member is in the guild
-      if (member) {
-        /**
-         * Ban the member
-         * Make sure you run this on a member, not a user!
-         * There are big differences between a user and a member
-         * Read more about what ban options there are over at
-         * https://discord.js.org/#/docs/main/stable/class/GuildMember?scrollTo=ban
-         */
-        member.ban({
-          reason: 'They were bad!',
-        }).then(() => {
-          // We let the message author know we were able to ban the person
-          message.reply(`Successfully banned &{user.tag}`);
-        }).catch(err => {
-          // An error happened
-          // This is generally due to the bot not being able to ban the member,
-          // either due to missing permissions or role hierarchy
-          message.reply('I was unable to ban the member');
-          // Log the error
-          console.error(err);
-        });
-      } else {
-        // The mentioned user isn't in this guild
-        message.reply('That user isn\'t in this guild!');
-      }
-    } else {
-    // Otherwise, if no user was mentioned
-      message.reply('You didn\'t mention the user to ban!');
-    }
-  }
+    const member = message.mentions.members.first()
+	let staffrole = ['431474051383296001'];
+        for(i=0;i<staffrole.length;i++) {
+            if(message.member.roles.filter((role) => role.id == staffrole[i]).size > 0) {
+                if (!member) {
+					return message.reply(
+						`Who are you trying to ban? You must mention a user.`
+					)
+					}
+
+					if (!member.banable) {
+					return message.reply(`I can't ban this user. Sorry!`)
+					}
+
+					return member
+					.ban()
+					.then(() => message.reply(member + "was banned."))
+					.catch(error => message.reply(`Sorry, an error occured.`))
+					return;
+            } else {
+				message.reply("You do not have permission to ban")
+			}
+        }
+	}
 });
 
 client.on('message', msg => {
