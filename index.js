@@ -73,22 +73,27 @@ client.on('guildMemberAdd', member => {
 client.on('message', message => {
   if (message.content.startsWith('&kick')) {
     const member = message.mentions.members.first()
+	let staffrole = ['431473913634226187', '431473986619179019', '604662967556112384'];
+        for(i=0;i<staffrole.length;i++) {
+            if(message.member.roles.filter((role) => role.id == staffrole[i]).size > 0) {
+                if (!member) {
+					return message.reply(
+						`Who are you trying to kick? You must mention a user.`
+					)
+					}
 
-    if (!member) {
-      return message.reply(
-        `Who are you trying to kick? You must mention a user.`
-      )
-    }
+					if (!member.kickable) {
+					return message.reply(`I can't kick this user. Sorry!`)
+					}
 
-    if (!member.kickable) {
-      return message.reply(`I can't kick this user. Sorry!`)
-    }
-
-    return member
-      .kick()
-      .then(() => message.reply(`&{member.user.tag} was kicked.`))
-      .catch(error => message.reply(`Sorry, an error occured.`))
-  }
+					return member
+					.kick()
+					.then(() => message.reply(member + "was kicked."))
+					.catch(error => message.reply(`Sorry, an error occured.`))
+					return;
+            }
+        }
+	}
 })
 
 client.on('message', message => {
