@@ -23,6 +23,7 @@
 //v44 - added &creeper.							aw man
 //v45 - fixed some grammar in &creeper and added it to &helpme
 //v46 - removed &creeper - caused too much lag
+//v47 - enabled &helpme
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -195,7 +196,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
 	if (msg.content === '&helpme') {
-		//msg.channel.send(helpembed);
+		msg.channel.send(helpembed);
 	}
 })
 
