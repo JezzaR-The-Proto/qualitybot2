@@ -28,6 +28,7 @@
 //v49 - added needed perms for &kick
 //v50 - added needed perms for &ban and updated needed perms for &kick
 //v51 - added console logs to each command.
+//v52 - bug fixes
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -63,7 +64,7 @@ client.on("message", message => {
 			message.channel.send("Pinging ...")
 			.then((msg) => {
 				msg.edit("Ping: " + (Date.now() - msg.createdTimestamp + "ms"))
-				console.log(message.guild.members.get(message.author.id).displayName + " sent &ping")
+				console.log(msg.guild.members.get(message.author.id).displayName + " sent &ping")
 			});
 		}
 })
@@ -78,23 +79,23 @@ client.on('message', message => {
 					return message.reply(
 						`Who are you trying to kick? You must mention a user.`
 					)
-					console.log(message.guild.members.get(message.author.id).displayName + " sent &kick but didn't mention anyone.")
+					console.log(msg.guild.members.get(message.author.id).displayName + " sent &kick but didn't mention anyone.")
 					}
 
 					if (!member.kickable) {
 					return message.reply(`I can't kick this user. Sorry!`)
-					console.log(message.guild.members.get(message.author.id).displayName + " sent &kick but QBV2 couldn't kick " + member + ".")
+					console.log(msg.guild.members.get(message.author.id).displayName + " sent &kick but QBV2 couldn't kick " + member + ".")
 					}
 
 					return member
 					.kick()
 					.then(() => message.reply(member + "was kicked."))
-					console.log(message.guild.members.get(message.author.id).displayName + " sent &kick and was successful.")
+					console.log(msg.guild.members.get(message.author.id).displayName + " sent &kick and was successful.")
 					.catch(error => message.reply(`Sorry, an error occured.`))
 					return;
             } else {
 				message.reply("You do not have permission to kick")
-				console.log(message.guild.members.get(message.author.id).displayName + " sent &kick but doesn't have permission to kick.")
+				console.log(msg.guild.members.get(message.author.id).displayName + " sent &kick but doesn't have permission to kick.")
 			}
         }
 	}
@@ -110,23 +111,23 @@ client.on('message', message => {
 					return message.reply(
 						`Who are you trying to ban? You must mention a user.`
 					)
-					console.log(message.guild.members.get(message.author.id).displayName + " sent &ban but didn't mention anyone.")
+					console.log(msg.guild.members.get(message.author.id).displayName + " sent &ban but didn't mention anyone.")
 					}
 
 					if (!member.banable) {
 					return message.reply(`I can't ban this user. Sorry!`)
-					console.log(message.guild.members.get(message.author.id).displayName + " sent &ban but QBV2 couldn't ban " + member + ".")
+					console.log(msg.guild.members.get(message.author.id).displayName + " sent &ban but QBV2 couldn't ban " + member + ".")
 					}
 
 					return member
 					.ban()
 					.then(() => message.reply(member + "was banned."))
-					console.log(message.guild.members.get(message.author.id).displayName + " sent &ban and was successful.")
+					console.log(msg.guild.members.get(message.author.id).displayName + " sent &ban and was successful.")
 					.catch(error => message.reply(`Sorry, an error occured.`))
 					return;
             } else {
 				message.reply("You do not have permission to ban")
-				console.log(message.guild.members.get(message.author.id).displayName + " sent &ban but doesn't have permission to ban.")
+				console.log(msg.guild.members.get(message.author.id).displayName + " sent &ban but doesn't have permission to ban.")
 			}
         }
 	}
@@ -135,14 +136,14 @@ client.on('message', message => {
 client.on('message', msg => {
   if (msg.content === '&h') {
 		msg.channel.send('h')
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &h")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &h")
   }
 })
 
 client.on('message', msg => {
   if (msg.content === '&help') {
 		msg.channel.send('you are beyond help')
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &help")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &help")
   }
 })
 
@@ -152,56 +153,56 @@ client.on('message', msg => {
 		msg.channel.send('PRAISE THE ORB')
 		msg.channel.send('PRAISE NEIL')
 		msg.channel.send('PRAISE CHRISTOPHER');
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &praise")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &praise")
   }
 })
 
 client.on('message', msg => {
   if (msg.content === '&bitrate') {
 		msg.channel.send('GIVE ME ALL YOUR JUICY DATA')
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &bitrate")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &bitrate")
   }
 })
 
 client.on('message', msg => {
   if (msg.content === '&neil') {
 		msg.channel.send('may neil praise you')
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &neil")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &neil")
   }
 })
 
 client.on('message', msg => {
   if (msg.content === '&christopher') {
 		msg.channel.send('christopher is love christopher is life')
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &christopher")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &christopher")
   }
 })
 
 client.on('message', msg => {
   if (msg.content === '&qualitybotv2') {
 		msg.channel.send('yes thats me')
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &qualitybotv2")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &qualitybotv2")
   }
 })
 
 client.on('message', msg => {
   if (msg.content === '&qualitybot') {
 		msg.channel.send('no thats not me thats the original you should know this')
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &qualitybot")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &qualitybot")
   }
 })
 
 client.on('message', msg => {
   if (msg.content === '&kurwa') {
 		msg.channel.send('**FRICK**')
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &kurwa")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &kurwa")
   }
 })
 
 client.on('message', msg => {
 	if (msg.content === '&helpme') {
 		msg.channel.send(helpembed);
-		console.log(message.guild.members.get(message.author.id).displayName + " sent &helpme")
+		console.log(msg.guild.members.get(message.author.id).displayName + " sent &helpme")
 	}
 })
 
