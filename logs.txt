@@ -1,0 +1,100 @@
+2019-09-06T17:06:04.287073+00:00 app[worker.1]: at WebSocket.onMessage (/app/node_modules/ws/lib/event-target.js:120:16)
+2019-09-06T17:06:04.287075+00:00 app[worker.1]: at WebSocket.emit (events.js:198:13)
+2019-09-06T17:06:04.287076+00:00 app[worker.1]: at Receiver.receiverOnMessage (/app/node_modules/ws/lib/websocket.js:789:20)
+2019-09-06T17:06:04.287077+00:00 app[worker.1]: at Receiver.emit (events.js:198:13)
+2019-09-06T17:21:18.056189+00:00 heroku[worker.1]: State changed from crashed to starting
+2019-09-06T17:21:20.588199+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-09-06T17:21:21.164854+00:00 heroku[worker.1]: State changed from starting to up
+2019-09-06T17:21:23.269613+00:00 app[worker.1]: (node:4) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 message listeners added. Use emitter.setMaxListeners() to increase limit
+2019-09-06T17:21:23.823084+00:00 app[worker.1]: Logged in as QualityBot V2#0474!
+2019-09-06T18:15:34.200692+00:00 app[worker.1]: [] sent &ping
+2019-09-06T18:15:51.885280+00:00 heroku[worker.1]: State changed from up to crashed
+2019-09-06T18:15:51.859813+00:00 heroku[worker.1]: Process exited with status 1
+2019-09-06T18:15:51.767541+00:00 app[worker.1]: /app/index.js:145
+2019-09-06T18:15:51.767551+00:00 app[worker.1]: console.log(message.guild.members.get(message.author.id).displayName + " sent &help")
+2019-09-06T18:15:51.767553+00:00 app[worker.1]: ^
+2019-09-06T18:15:51.767554+00:00 app[worker.1]: 
+2019-09-06T18:15:51.767556+00:00 app[worker.1]: ReferenceError: message is not defined
+2019-09-06T18:15:51.767558+00:00 app[worker.1]: at Client.client.on.msg (/app/index.js:145:15)
+2019-09-06T18:15:51.767559+00:00 app[worker.1]: at Client.emit (events.js:203:15)
+2019-09-06T18:15:51.767560+00:00 app[worker.1]: at MessageCreateHandler.handle (/app/node_modules/discord.js/src/client/websocket/packets/handlers/MessageCreate.js:9:34)
+2019-09-06T18:15:51.767562+00:00 app[worker.1]: at WebSocketPacketManager.handle (/app/node_modules/discord.js/src/client/websocket/packets/WebSocketPacketManager.js:105:65)
+2019-09-06T18:15:51.767564+00:00 app[worker.1]: at WebSocketConnection.onPacket (/app/node_modules/discord.js/src/client/websocket/WebSocketConnection.js:333:35)
+2019-09-06T18:15:51.767565+00:00 app[worker.1]: at WebSocketConnection.onMessage (/app/node_modules/discord.js/src/client/websocket/WebSocketConnection.js:296:17)
+2019-09-06T18:15:51.767567+00:00 app[worker.1]: at WebSocket.onMessage (/app/node_modules/ws/lib/event-target.js:120:16)
+2019-09-06T18:15:51.767568+00:00 app[worker.1]: at WebSocket.emit (events.js:198:13)
+2019-09-06T18:15:51.767570+00:00 app[worker.1]: at Receiver.receiverOnMessage (/app/node_modules/ws/lib/websocket.js:789:20)
+2019-09-06T18:15:51.767571+00:00 app[worker.1]: at Receiver.emit (events.js:198:13)
+2019-09-06T18:15:52.143071+00:00 heroku[worker.1]: State changed from crashed to starting
+2019-09-06T18:15:54.127353+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-09-06T18:15:54.789945+00:00 heroku[worker.1]: State changed from starting to up
+2019-09-06T18:15:55.945238+00:00 app[worker.1]: (node:4) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 message listeners added. Use emitter.setMaxListeners() to increase limit
+2019-09-06T18:15:56.384859+00:00 app[worker.1]: Logged in as QualityBot V2#0474!
+2019-09-06T18:15:57.045337+00:00 heroku[worker.1]: State changed from up to crashed
+2019-09-06T18:15:56.980569+00:00 app[worker.1]: /app/index.js:204
+2019-09-06T18:15:56.980584+00:00 app[worker.1]: console.log(message.guild.members.get(message.author.id).displayName + " sent &helpme")
+2019-09-06T18:15:56.980586+00:00 app[worker.1]: ^
+2019-09-06T18:15:56.980587+00:00 app[worker.1]: 
+2019-09-06T18:15:56.980588+00:00 app[worker.1]: ReferenceError: message is not defined
+2019-09-06T18:15:56.980590+00:00 app[worker.1]: at Client.client.on.msg (/app/index.js:204:15)
+2019-09-06T18:15:56.980591+00:00 app[worker.1]: at Client.emit (events.js:203:15)
+2019-09-06T18:15:56.980592+00:00 app[worker.1]: at MessageCreateHandler.handle (/app/node_modules/discord.js/src/client/websocket/packets/handlers/MessageCreate.js:9:34)
+2019-09-06T18:15:56.980593+00:00 app[worker.1]: at WebSocketPacketManager.handle (/app/node_modules/discord.js/src/client/websocket/packets/WebSocketPacketManager.js:105:65)
+2019-09-06T18:15:56.980595+00:00 app[worker.1]: at WebSocketConnection.onPacket (/app/node_modules/discord.js/src/client/websocket/WebSocketConnection.js:333:35)
+2019-09-06T18:15:56.980596+00:00 app[worker.1]: at WebSocketConnection.onMessage (/app/node_modules/discord.js/src/client/websocket/WebSocketConnection.js:296:17)
+2019-09-06T18:15:56.980597+00:00 app[worker.1]: at WebSocket.onMessage (/app/node_modules/ws/lib/event-target.js:120:16)
+2019-09-06T18:15:56.980598+00:00 app[worker.1]: at WebSocket.emit (events.js:198:13)
+2019-09-06T18:15:56.980599+00:00 app[worker.1]: at Receiver.receiverOnMessage (/app/node_modules/ws/lib/websocket.js:789:20)
+2019-09-06T18:15:56.980600+00:00 app[worker.1]: at Receiver.emit (events.js:198:13)
+2019-09-06T18:15:57.024139+00:00 heroku[worker.1]: Process exited with status 1
+2019-09-06T18:20:54.000000+00:00 app[api]: Build started by user jeremyruss43@gmail.com
+2019-09-06T18:21:14.000000+00:00 app[api]: Build succeeded
+2019-09-06T18:21:14.920626+00:00 heroku[worker.1]: State changed from crashed to starting
+2019-09-06T18:21:13.568165+00:00 app[api]: Deploy c677868d by user jeremyruss43@gmail.com
+2019-09-06T18:21:13.568165+00:00 app[api]: Release v52 created by user jeremyruss43@gmail.com
+2019-09-06T18:21:17.158950+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-09-06T18:21:17.872414+00:00 heroku[worker.1]: State changed from starting to up
+2019-09-06T18:21:19.375612+00:00 app[worker.1]: (node:4) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 message listeners added. Use emitter.setMaxListeners() to increase limit
+2019-09-06T18:21:21.743381+00:00 app[worker.1]: Logged in as QualityBot V2#0474!
+2019-09-06T18:21:37.495091+00:00 app[worker.1]: fam squad sent &ping
+2019-09-06T18:21:56.795110+00:00 app[worker.1]: [] sent &ping
+2019-09-06T18:21:58.419144+00:00 app[worker.1]: /app/index.js:163
+2019-09-06T18:21:58.419156+00:00 app[worker.1]: console.log(msg.guild.members.get(message.author.id).displayName + " sent &bitrate")
+2019-09-06T18:21:58.419158+00:00 app[worker.1]: ^
+2019-09-06T18:21:58.419159+00:00 app[worker.1]: 
+2019-09-06T18:21:58.419160+00:00 app[worker.1]: ReferenceError: message is not defined
+2019-09-06T18:21:58.419162+00:00 app[worker.1]: at Client.client.on.msg (/app/index.js:163:37)
+2019-09-06T18:21:58.419164+00:00 app[worker.1]: at Client.emit (events.js:203:15)
+2019-09-06T18:21:58.419166+00:00 app[worker.1]: at MessageCreateHandler.handle (/app/node_modules/discord.js/src/client/websocket/packets/handlers/MessageCreate.js:9:34)
+2019-09-06T18:21:58.419168+00:00 app[worker.1]: at WebSocketPacketManager.handle (/app/node_modules/discord.js/src/client/websocket/packets/WebSocketPacketManager.js:105:65)
+2019-09-06T18:21:58.419170+00:00 app[worker.1]: at WebSocketConnection.onPacket (/app/node_modules/discord.js/src/client/websocket/WebSocketConnection.js:333:35)
+2019-09-06T18:21:58.419171+00:00 app[worker.1]: at WebSocketConnection.onMessage (/app/node_modules/discord.js/src/client/websocket/WebSocketConnection.js:296:17)
+2019-09-06T18:21:58.419173+00:00 app[worker.1]: at WebSocket.onMessage (/app/node_modules/ws/lib/event-target.js:120:16)
+2019-09-06T18:21:58.419174+00:00 app[worker.1]: at WebSocket.emit (events.js:198:13)
+2019-09-06T18:21:58.419176+00:00 app[worker.1]: at Receiver.receiverOnMessage (/app/node_modules/ws/lib/websocket.js:789:20)
+2019-09-06T18:21:58.419177+00:00 app[worker.1]: at Receiver.emit (events.js:198:13)
+2019-09-06T18:21:58.533357+00:00 heroku[worker.1]: State changed from up to crashed
+2019-09-06T18:21:58.499982+00:00 heroku[worker.1]: Process exited with status 1
+2019-09-06T18:25:06.000000+00:00 app[api]: Build started by user jeremyruss43@gmail.com
+2019-09-06T18:25:25.021793+00:00 app[api]: Deploy 87ceefff by user jeremyruss43@gmail.com
+2019-09-06T18:25:25.021793+00:00 app[api]: Release v53 created by user jeremyruss43@gmail.com
+2019-09-06T18:25:25.000000+00:00 app[api]: Build succeeded
+2019-09-06T18:25:26.493538+00:00 heroku[worker.1]: State changed from crashed to starting
+2019-09-06T18:25:28.617816+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-09-06T18:25:29.301818+00:00 heroku[worker.1]: State changed from starting to up
+2019-09-06T18:25:30.504249+00:00 app[worker.1]: (node:4) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 message listeners added. Use emitter.setMaxListeners() to increase limit
+2019-09-06T18:25:30.940366+00:00 app[worker.1]: Logged in as QualityBot V2#0474!
+2019-09-06T18:25:34.216114+00:00 app[worker.1]: QualityBot V2 sent &ping
+2019-09-06T18:25:36.881524+00:00 app[worker.1]: QualityBot V2 sent &ping
+2019-09-06T18:25:39.286631+00:00 app[worker.1]: QualityBot V2 sent &ping
+2019-09-06T18:25:45.083784+00:00 app[worker.1]: [] sent &helpme
+2019-09-06T18:25:45.256908+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-09-06T18:25:45.256912+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-09-06T18:25:45.256914+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-09-06T18:25:45.256915+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-09-06T18:25:45.256981+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+2019-09-06T18:25:45.257051+00:00 app[worker.1]: (node:4) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2019-09-06T18:25:48.483446+00:00 app[worker.1]: QualityBot V2 sent &ping
+2019-09-06T18:25:49.893281+00:00 app[worker.1]: [] sent &bitrate
+2019-09-06T18:27:05.304384+00:00 app[worker.1]: QualityBot V2 sent &ping
+2019-09-06T18:27:18.073790+00:00 app[worker.1]: QualityBot V2 sent &ping

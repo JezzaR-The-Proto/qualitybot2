@@ -30,6 +30,7 @@
 //v51 - added console logs to each command.
 //v52 - bug fixes
 //v53 - moar bug fixes
+//v54 - meme release
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -60,7 +61,7 @@ client.on('ready', () => {
   client.user.setActivity('for commands. &helpme', { type: 'WATCHING' });   
 })
 
-client.on("message", message => {
+/*client.on("message", message => {
 	if(message.content == "&ping"){
 			message.channel.send("Pinging ...")
 			.then((msg) => {
@@ -207,4 +208,24 @@ client.on('message', msg => {
 	}
 })
 
+client.on('message', msg => {
+	if (msg.content === '&owo') {
+		msg.channel.send("OwO");
+		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &owo")
+	}
+})
+
+client.on('message', msg => {
+	if (msg.content === '&uwu') {
+		msg.channel.send("UwU");
+		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &uwu")
+	}
+})
+*/
+client.on('message', msg => {
+	if (msg.content.includes('&')) {
+		msg.channel.send("OwO what's this?");
+		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &")
+	}
+})
 client.login(process.env.BOT_TOKEN)
