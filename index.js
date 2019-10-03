@@ -32,6 +32,7 @@
 //v53 - moar bug fixes
 //v54 - meme release
 //v55 - updated meme release
+//v56 - mem release broke last time
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -224,7 +225,7 @@ client.on('message', msg => {
 })
 */
 client.on('message', msg => {
-	if (msg.content.includes('')) {
+	if (msg.content.includes('?')) {
 		msg.channel.send("OwO what's this?");
 		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &")
 	}
