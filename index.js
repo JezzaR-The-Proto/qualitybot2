@@ -228,6 +228,7 @@ client.on('message', msg => {
 */
 client.on('message', msg => {
 	if (msg.content === '&creeper') {
+		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &creeper")
 		msg.channel.send("Aw man")
 		msg.channel.send("So we back in the mine")
 		msg.channel.send("got our pick axe swinging side to side")
@@ -298,6 +299,7 @@ client.on('message', msg => {
 		msg.channel.send("until the sun comes up in the morn")
 		msg.channel.send("cause baby tonight")
 		msg.channel.send("the creepers tryna steal all our stuff again")
+		msg.channel.send("&creeper")
 	}
 })
 
