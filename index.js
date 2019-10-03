@@ -33,7 +33,10 @@
 //v54 - meme release
 //v55 - updated meme release
 //v56 - mem release broke last time
+<<<<<<< HEAD
 //v58 - creeper aw man
+=======
+>>>>>>> 85e95a038e61c20430c4046b605de90aa06ff608
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -215,6 +218,7 @@ client.on('message', msg => {
 	if (msg.content === '&owo') {
 		msg.channel.send("OwO");
 		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &owo")
+<<<<<<< HEAD
 	}
 })
 
@@ -297,10 +301,22 @@ client.on('message', msg => {
 		msg.channel.send("until the sun comes up in the morn")
 		msg.channel.send("cause baby tonight")
 		msg.channel.send("the creepers tryna steal all our stuff again")
+=======
+>>>>>>> 85e95a038e61c20430c4046b605de90aa06ff608
 	}
 })
 
 client.on('message', msg => {
+<<<<<<< HEAD
+=======
+	if (msg.content === '&uwu') {
+		msg.channel.send("UwU");
+		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &uwu")
+	}
+})
+*/
+client.on('message', msg => {
+>>>>>>> 85e95a038e61c20430c4046b605de90aa06ff608
 	if (msg.content.includes('?')) {
 		msg.channel.send("OwO what's this?");
 		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &")
