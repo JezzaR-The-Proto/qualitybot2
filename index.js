@@ -242,7 +242,7 @@ client.on('message', msg => {
 		msg.channel.send("turn around and look up")
 		msg.channel.send("total shock fills your body")
 		msg.channel.send("oh no its you again")
-		msg.channel.send("i can never forger those eyes eyes eyes")
+		msg.channel.send("i can never forget those eyes eyes eyes")
 		msg.channel.send("eyes eyes eyes")
 		msg.channel.send("cause baby tonight")
 		msg.channel.send("the creepers tryna steal all our stuff again")
