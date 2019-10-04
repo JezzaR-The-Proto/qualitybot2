@@ -304,9 +304,9 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
-	if (msg.content.includes('?')) {
+	if (msg.content.includes('uwu')) {
 		msg.channel.send("OwO what's this?");
-		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &")
+		console.log(msg.guild.members.get(msg.author.id).displayName + " sent uwu")
 	}
 })
 client.login(process.env.BOT_TOKEN)
