@@ -34,6 +34,7 @@
 //v55 - updated meme release
 //v56 - mem release broke last time
 //v58 - creeper aw man
+//v63 - undo mem release
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -64,7 +65,7 @@ client.on('ready', () => {
   client.user.setActivity('for commands. &helpme', { type: 'WATCHING' });   
 })
 
-/*client.on("message", message => {
+client.on("message", message => {
 	if(message.content == "&ping"){
 			message.channel.send("Pinging ...")
 			.then((msg) => {
@@ -225,7 +226,7 @@ client.on('message', msg => {
 		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &uwu")
 	}
 })
-*/
+
 client.on('message', msg => {
 	if (msg.content === '&creeper') {
 		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &creeper")

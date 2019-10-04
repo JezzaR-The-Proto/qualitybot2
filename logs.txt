@@ -836,3 +836,318 @@
 2019-10-04T17:17:12.497579+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 57)
 2019-10-04T17:31:55.962944+00:00 app[worker.1]: JezzaR sent &creeper
 Terminate batch job (Y/N)? 
+2019-10-04T17:16:03.540200+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 19)
+2019-10-04T17:16:03.737965+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:16:03.737985+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:16:03.737987+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:16:03.737988+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:16:03.738088+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 21)
+2019-10-04T17:16:08.601792+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:16:08.601809+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:16:08.601811+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:16:08.601813+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:16:08.601819+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 24)
+2019-10-04T17:16:08.779883+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:16:08.779887+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:16:08.779888+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:16:08.779890+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:16:08.779941+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 26)
+2019-10-04T17:16:08.961466+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:16:08.961479+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:16:08.961481+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:16:08.961482+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:16:08.961489+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 28)
+2019-10-04T17:16:09.175399+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:16:09.175403+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:16:09.175405+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:16:09.175406+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:16:09.175437+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 30)
+2019-10-04T17:16:09.345037+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:16:09.345044+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:16:09.345045+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:16:09.345047+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:16:09.345086+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 32)
+2019-10-04T17:17:01.162780+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:01.162798+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:01.162801+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:01.162802+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:01.162848+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 35)
+2019-10-04T17:17:01.354652+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:01.354656+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:01.354657+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:01.354659+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:01.354756+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 37)
+2019-10-04T17:17:01.580806+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:01.580818+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:01.580820+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:01.580821+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:01.580828+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 39)
+2019-10-04T17:17:01.762209+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:01.762213+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:01.762214+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:01.762216+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:01.762349+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 41)
+2019-10-04T17:17:01.995701+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:01.995712+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:01.995714+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:01.995716+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:01.995755+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 43)
+2019-10-04T17:17:06.893603+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:06.893618+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:06.893620+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:06.893621+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:06.898827+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 46)
+2019-10-04T17:17:07.077373+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:07.077377+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:07.077379+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:07.077381+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:07.077402+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 48)
+2019-10-04T17:17:07.260074+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:07.260091+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:07.260094+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:07.260095+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:07.260102+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 50)
+2019-10-04T17:17:07.481179+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:07.481182+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:07.481184+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:07.481186+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:07.481459+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 52)
+2019-10-04T17:17:07.777691+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:07.777703+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:07.777706+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:07.777708+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:07.777815+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 54)
+2019-10-04T17:17:12.497517+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions
+2019-10-04T17:17:12.497530+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:17:12.497532+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:17:12.497533+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:17:12.497579+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 57)
+2019-10-04T17:31:55.962944+00:00 app[worker.1]: JezzaR sent &creeper
+2019-10-04T17:33:10.000000+00:00 app[api]: Build started by user jeremyruss43@gmail.com
+2019-10-04T17:33:27.297108+00:00 app[worker.1]: *notices bot* sent &creeper
+2019-10-04T17:33:29.045134+00:00 app[api]: Deploy 52d71b18 by user jeremyruss43@gmail.com
+2019-10-04T17:33:29.045134+00:00 app[api]: Release v62 created by user jeremyruss43@gmail.com
+2019-10-04T17:33:29.000000+00:00 app[api]: Build succeeded
+2019-10-04T17:33:30.527440+00:00 heroku[worker.1]: Restarting
+2019-10-04T17:33:30.968386+00:00 heroku[worker.1]: State changed from up to starting
+2019-10-04T17:33:32.505821+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2019-10-04T17:33:32.675652+00:00 heroku[worker.1]: Process exited with status 143
+2019-10-04T17:33:32.818103+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-10-04T17:33:33.490825+00:00 heroku[worker.1]: State changed from starting to up
+2019-10-04T17:33:35.475113+00:00 app[worker.1]: Logged in as QualityBot V2#0474!
+2019-10-04T17:33:41.848904+00:00 app[worker.1]: JezzaR sent &creeper
+2019-10-04T17:35:14.312125+00:00 app[worker.1]: *notices bot* sent &creeper
+2019-10-04T17:36:46.574333+00:00 app[worker.1]: *notices bot* sent &creeper
+2019-10-04T17:38:20.659179+00:00 app[worker.1]: *notices bot* sent &creeper
+2019-10-04T17:39:54.553478+00:00 app[worker.1]: *notices bot* sent &creeper
+2019-10-04T17:41:29.440912+00:00 app[worker.1]: *notices bot* sent &creeper
+2019-10-04T17:42:43.135875+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:43.135901+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:43.135904+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:43.135906+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:43.135954+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 2)
+2019-10-04T17:42:43.136102+00:00 app[worker.1]: (node:4) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2019-10-04T17:42:43.306192+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:43.306195+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:43.306197+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:43.306199+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:43.306246+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 4)
+2019-10-04T17:42:43.573279+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:43.573297+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:43.573299+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:43.573300+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:43.573390+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 6)
+2019-10-04T17:42:43.750261+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:43.750264+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:43.750266+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:43.750268+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:43.750306+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 8)
+2019-10-04T17:42:43.920281+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:43.920601+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:43.920603+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:43.920605+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:43.920612+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 10)
+2019-10-04T17:42:48.844737+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:48.844755+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:48.844757+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:48.844758+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:48.844796+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 13)
+2019-10-04T17:42:49.050720+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:49.050723+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:49.050725+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:49.050726+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:49.050874+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 15)
+2019-10-04T17:42:49.258644+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:49.258660+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:49.258663+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:49.258665+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:49.258696+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 17)
+2019-10-04T17:42:49.462303+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:49.462306+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:49.462308+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:49.462309+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:49.462346+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 19)
+2019-10-04T17:42:49.671784+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:49.671802+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:49.671804+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:49.671805+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:49.671813+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 21)
+2019-10-04T17:42:54.487723+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:54.487739+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.487741+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.487742+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.487748+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 24)
+2019-10-04T17:42:54.742549+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:54.742563+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.742565+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.742566+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.742642+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 26)
+2019-10-04T17:42:54.933365+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:54.933369+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.933373+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.933375+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.933441+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 28)
+2019-10-04T17:42:55.128081+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:55.128096+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:55.128097+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:55.128099+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:55.128124+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 30)
+2019-10-04T17:42:55.308158+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:55.308162+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:55.308164+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:55.308165+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:55.308210+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 32)
+2019-10-04T17:43:00.201786+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.201806+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.201808+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.201810+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.201817+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 35)
+2019-10-04T17:43:00.407179+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.407183+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.407185+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.407189+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.407271+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 37)
+2019-10-04T17:43:00.636436+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.636455+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.636458+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.636459+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.636475+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 39)
+2019-10-04T17:43:00.816392+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.816396+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.816398+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.816399+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.816518+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 41)
+2019-10-04T17:43:01.062044+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:01.062057+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:01.062059+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:01.062061+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:01.062103+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 43)
+2019-10-04T17:43:05.869347+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:05.869359+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:05.869361+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:05.869362+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:05.869410+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 46)
+2019-10-04T17:42:43.306192+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:43.306195+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:43.306197+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:43.306199+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:43.306246+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 4)
+2019-10-04T17:42:43.573279+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:43.573297+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:43.573299+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:43.573300+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:43.573390+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 6)
+2019-10-04T17:42:43.750261+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:43.750264+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:43.750266+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:43.750268+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:43.750306+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 8)
+2019-10-04T17:42:43.920281+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:43.920601+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:43.920603+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:43.920605+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:43.920612+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 10)
+2019-10-04T17:42:48.844737+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:48.844755+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:48.844757+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:48.844758+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:48.844796+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 13)
+2019-10-04T17:42:49.050720+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:49.050723+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:49.050725+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:49.050726+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:49.050874+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 15)
+2019-10-04T17:42:49.258644+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:49.258660+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:49.258663+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:49.258665+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:49.258696+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 17)
+2019-10-04T17:42:49.462303+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:49.462306+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:49.462308+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:49.462309+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:49.462346+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 19)
+2019-10-04T17:42:49.671784+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:49.671802+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:49.671804+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:49.671805+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:49.671813+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 21)
+2019-10-04T17:42:54.487723+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:54.487739+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.487741+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.487742+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.487748+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 24)
+2019-10-04T17:42:54.742549+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:54.742563+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.742565+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.742566+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.742642+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 26)
+2019-10-04T17:42:54.933365+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:54.933369+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.933373+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.933375+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.933441+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 28)
+2019-10-04T17:42:55.128081+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:55.128096+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:55.128097+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:55.128099+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:55.128124+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 30)
+2019-10-04T17:42:55.308158+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:55.308162+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:55.308164+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:55.308165+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:55.308210+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 32)
+2019-10-04T17:43:00.201786+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.201806+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.201808+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.201810+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.201817+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 35)
+2019-10-04T17:43:00.407179+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.407183+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.407185+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.407189+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.407271+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 37)
+2019-10-04T17:43:00.636436+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.636455+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.636458+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.636459+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.636475+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 39)
+2019-10-04T17:43:00.816392+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.816396+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.816398+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.816399+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.816518+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 41)
+2019-10-04T17:43:01.062044+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:01.062057+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:01.062059+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:01.062061+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:01.062103+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 43)
+2019-10-04T17:43:05.869347+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:05.869359+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:05.869361+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:05.869362+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:05.869410+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 46)
+2019-10-04T19:18:09.157485+00:00 heroku[worker.1]: State changed from up to down
+2019-10-04T19:18:08.837085+00:00 app[api]: Scaled to web@0:Free worker@0:Free by user jeremyruss43@gmail.com
+2019-10-04T19:18:10.066602+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2019-10-04T19:18:10.137585+00:00 heroku[worker.1]: Process exited with status 143
