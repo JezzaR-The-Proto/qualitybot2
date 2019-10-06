@@ -35,6 +35,7 @@
 //v56 - mem release broke last time
 //v58 - creeper aw man
 //v63 - undo mem release
+//v65 - fixing pushing to server
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -216,7 +217,6 @@ client.on('message', msg => {
 	if (msg.content === '&owo') {
 		msg.channel.send("OwO");
 		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &owo")
-<<<<<<< HEAD
 	}
 })
 
