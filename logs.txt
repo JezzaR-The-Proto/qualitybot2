@@ -1151,3 +1151,221 @@ Terminate batch job (Y/N)?
 2019-10-04T19:18:08.837085+00:00 app[api]: Scaled to web@0:Free worker@0:Free by user jeremyruss43@gmail.com
 2019-10-04T19:18:10.066602+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
 2019-10-04T19:18:10.137585+00:00 heroku[worker.1]: Process exited with status 143
+2019-10-04T17:42:54.742563+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.742565+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.742566+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.742642+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 26)
+2019-10-04T17:42:54.933365+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:54.933369+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.933373+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.933375+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.933441+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 28)
+2019-10-04T17:42:55.128081+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:55.128096+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:55.128097+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:55.128099+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:55.128124+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 30)
+2019-10-04T17:42:55.308158+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:55.308162+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:55.308164+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:55.308165+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:55.308210+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 32)
+2019-10-04T17:43:00.201786+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.201806+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.201808+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.201810+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.201817+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 35)
+2019-10-04T17:43:00.407179+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.407183+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.407185+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.407189+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.407271+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 37)
+2019-10-04T17:43:00.636436+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.636455+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.636458+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.636459+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.636475+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 39)
+2019-10-04T17:43:00.816392+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.816396+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.816398+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.816399+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.816518+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 41)
+2019-10-04T17:43:01.062044+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:01.062057+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:01.062059+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:01.062061+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:01.062103+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 43)
+2019-10-04T17:43:05.869347+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:05.869359+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:05.869361+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:05.869362+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:05.869410+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 46)
+2019-10-04T19:18:09.157485+00:00 heroku[worker.1]: State changed from up to down
+2019-10-04T19:18:08.837085+00:00 app[api]: Scaled to web@0:Free worker@0:Free by user jeremyruss43@gmail.com
+2019-10-04T19:18:10.066602+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2019-10-04T19:18:10.137585+00:00 heroku[worker.1]: Process exited with status 143
+2019-10-04T19:18:59.638167+00:00 app[api]: Scaled to web@0:Free worker@1:Free by user jeremyruss43@gmail.com
+2019-10-04T19:19:02.231259+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-10-04T19:19:02.918478+00:00 heroku[worker.1]: State changed from starting to up
+2019-10-04T19:19:06.023190+00:00 app[worker.1]: Logged in as QualityBot V2#0474!
+2019-10-04T19:22:48.000000+00:00 app[api]: Build started by user jeremyruss43@gmail.com
+2019-10-04T19:23:08.304022+00:00 app[api]: Deploy a9761ec0 by user jeremyruss43@gmail.com
+2019-10-04T19:23:08.304022+00:00 app[api]: Release v63 created by user jeremyruss43@gmail.com
+2019-10-04T19:23:09.686236+00:00 heroku[worker.1]: Restarting
+2019-10-04T19:23:09.800144+00:00 heroku[worker.1]: State changed from up to starting
+2019-10-04T19:23:08.000000+00:00 app[api]: Build succeeded
+2019-10-04T19:23:11.442617+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2019-10-04T19:23:11.568633+00:00 heroku[worker.1]: Process exited with status 143
+2019-10-04T19:23:11.634941+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-10-04T19:23:12.351619+00:00 heroku[worker.1]: State changed from starting to up
+2019-10-04T19:23:13.877899+00:00 heroku[worker.1]: State changed from up to crashed
+2019-10-04T19:23:13.958842+00:00 heroku[worker.1]: State changed from crashed to starting
+2019-10-04T19:23:13.866076+00:00 heroku[worker.1]: Process exited with status 1
+2019-10-04T19:23:13.675467+00:00 app[worker.1]: /app/index.js:219
+2019-10-04T19:23:13.675486+00:00 app[worker.1]: <<<<<<< HEAD
+2019-10-04T19:23:13.675487+00:00 app[worker.1]: ^^
+2019-10-04T19:23:13.675489+00:00 app[worker.1]: 
+2019-10-04T19:23:13.675490+00:00 app[worker.1]: SyntaxError: Unexpected token <<
+2019-10-04T19:23:13.675492+00:00 app[worker.1]: at Module._compile (internal/modules/cjs/loader.js:723:23)
+2019-10-04T19:23:13.675493+00:00 app[worker.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2019-10-04T19:23:13.675495+00:00 app[worker.1]: at Module.load (internal/modules/cjs/loader.js:653:32)
+2019-10-04T19:23:13.675496+00:00 app[worker.1]: at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2019-10-04T19:23:13.675497+00:00 app[worker.1]: at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2019-10-04T19:23:13.675499+00:00 app[worker.1]: at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+2019-10-04T19:23:13.675500+00:00 app[worker.1]: at startup (internal/bootstrap/node.js:283:19)
+2019-10-04T19:23:13.675501+00:00 app[worker.1]: at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-10-04T19:23:15.813224+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-10-04T19:23:16.520483+00:00 heroku[worker.1]: State changed from starting to up
+2019-10-04T19:23:17.965791+00:00 heroku[worker.1]: State changed from up to crashed
+2019-10-04T19:23:17.977947+00:00 heroku[worker.1]: Process exited with status 1
+2019-10-04T19:23:17.888626+00:00 app[worker.1]: /app/index.js:219
+2019-10-04T19:23:17.888655+00:00 app[worker.1]: <<<<<<< HEAD
+2019-10-04T19:23:17.888657+00:00 app[worker.1]: ^^
+2019-10-04T19:23:17.888658+00:00 app[worker.1]: 
+2019-10-04T19:23:17.888660+00:00 app[worker.1]: SyntaxError: Unexpected token <<
+2019-10-04T19:23:17.888661+00:00 app[worker.1]: at Module._compile (internal/modules/cjs/loader.js:723:23)
+2019-10-04T19:23:17.888663+00:00 app[worker.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2019-10-04T19:23:17.888664+00:00 app[worker.1]: at Module.load (internal/modules/cjs/loader.js:653:32)
+2019-10-04T19:23:17.888666+00:00 app[worker.1]: at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2019-10-04T19:23:17.888667+00:00 app[worker.1]: at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2019-10-04T19:23:17.888668+00:00 app[worker.1]: at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+2019-10-04T19:23:17.888670+00:00 app[worker.1]: at startup (internal/bootstrap/node.js:283:19)
+2019-10-04T19:23:17.888671+00:00 app[worker.1]: at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-10-04T17:42:54.742563+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.742565+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.742566+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.742642+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 26)
+2019-10-04T17:42:54.933365+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:54.933369+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:54.933373+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:54.933375+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:54.933441+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 28)
+2019-10-04T17:42:55.128081+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:55.128096+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:55.128097+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:55.128099+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:55.128124+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 30)
+2019-10-04T17:42:55.308158+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:42:55.308162+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:42:55.308164+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:42:55.308165+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:42:55.308210+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 32)
+2019-10-04T17:43:00.201786+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.201806+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.201808+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.201810+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.201817+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 35)
+2019-10-04T17:43:00.407179+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.407183+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.407185+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.407189+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.407271+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 37)
+2019-10-04T17:43:00.636436+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.636455+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.636458+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.636459+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.636475+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 39)
+2019-10-04T17:43:00.816392+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:00.816396+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:00.816398+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:00.816399+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:00.816518+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 41)
+2019-10-04T17:43:01.062044+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:01.062057+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:01.062059+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:01.062061+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:01.062103+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 43)
+2019-10-04T17:43:05.869347+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Access
+2019-10-04T17:43:05.869359+00:00 app[worker.1]: at item.request.gen.end (/app/node_modules/discord.js/src/client/rest/RequestHandlers/Sequential.js:85:15)
+2019-10-04T17:43:05.869361+00:00 app[worker.1]: at then (/app/node_modules/snekfetch/src/index.js:215:21)
+2019-10-04T17:43:05.869362+00:00 app[worker.1]: at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-10-04T17:43:05.869410+00:00 app[worker.1]: (node:4) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 46)
+2019-10-04T19:18:09.157485+00:00 heroku[worker.1]: State changed from up to down
+2019-10-04T19:18:08.837085+00:00 app[api]: Scaled to web@0:Free worker@0:Free by user jeremyruss43@gmail.com
+2019-10-04T19:18:10.066602+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2019-10-04T19:18:10.137585+00:00 heroku[worker.1]: Process exited with status 143
+2019-10-04T19:18:59.638167+00:00 app[api]: Scaled to web@0:Free worker@1:Free by user jeremyruss43@gmail.com
+2019-10-04T19:19:02.231259+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-10-04T19:19:02.918478+00:00 heroku[worker.1]: State changed from starting to up
+2019-10-04T19:19:06.023190+00:00 app[worker.1]: Logged in as QualityBot V2#0474!
+2019-10-04T19:22:48.000000+00:00 app[api]: Build started by user jeremyruss43@gmail.com
+2019-10-04T19:23:08.304022+00:00 app[api]: Deploy a9761ec0 by user jeremyruss43@gmail.com
+2019-10-04T19:23:08.304022+00:00 app[api]: Release v63 created by user jeremyruss43@gmail.com
+2019-10-04T19:23:09.686236+00:00 heroku[worker.1]: Restarting
+2019-10-04T19:23:09.800144+00:00 heroku[worker.1]: State changed from up to starting
+2019-10-04T19:23:08.000000+00:00 app[api]: Build succeeded
+2019-10-04T19:23:11.442617+00:00 heroku[worker.1]: Stopping all processes with SIGTERM
+2019-10-04T19:23:11.568633+00:00 heroku[worker.1]: Process exited with status 143
+2019-10-04T19:23:11.634941+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-10-04T19:23:12.351619+00:00 heroku[worker.1]: State changed from starting to up
+2019-10-04T19:23:13.877899+00:00 heroku[worker.1]: State changed from up to crashed
+2019-10-04T19:23:13.958842+00:00 heroku[worker.1]: State changed from crashed to starting
+2019-10-04T19:23:13.866076+00:00 heroku[worker.1]: Process exited with status 1
+2019-10-04T19:23:13.675467+00:00 app[worker.1]: /app/index.js:219
+2019-10-04T19:23:13.675486+00:00 app[worker.1]: <<<<<<< HEAD
+2019-10-04T19:23:13.675487+00:00 app[worker.1]: ^^
+2019-10-04T19:23:13.675489+00:00 app[worker.1]: 
+2019-10-04T19:23:13.675490+00:00 app[worker.1]: SyntaxError: Unexpected token <<
+2019-10-04T19:23:13.675492+00:00 app[worker.1]: at Module._compile (internal/modules/cjs/loader.js:723:23)
+2019-10-04T19:23:13.675493+00:00 app[worker.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2019-10-04T19:23:13.675495+00:00 app[worker.1]: at Module.load (internal/modules/cjs/loader.js:653:32)
+2019-10-04T19:23:13.675496+00:00 app[worker.1]: at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2019-10-04T19:23:13.675497+00:00 app[worker.1]: at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2019-10-04T19:23:13.675499+00:00 app[worker.1]: at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+2019-10-04T19:23:13.675500+00:00 app[worker.1]: at startup (internal/bootstrap/node.js:283:19)
+2019-10-04T19:23:13.675501+00:00 app[worker.1]: at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-10-04T19:23:15.813224+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-10-04T19:23:16.520483+00:00 heroku[worker.1]: State changed from starting to up
+2019-10-04T19:23:17.965791+00:00 heroku[worker.1]: State changed from up to crashed
+2019-10-04T19:23:17.977947+00:00 heroku[worker.1]: Process exited with status 1
+2019-10-04T19:23:17.888626+00:00 app[worker.1]: /app/index.js:219
+2019-10-04T19:23:17.888655+00:00 app[worker.1]: <<<<<<< HEAD
+2019-10-04T19:23:17.888657+00:00 app[worker.1]: ^^
+2019-10-04T19:23:17.888658+00:00 app[worker.1]: 
+2019-10-04T19:23:17.888660+00:00 app[worker.1]: SyntaxError: Unexpected token <<
+2019-10-04T19:23:17.888661+00:00 app[worker.1]: at Module._compile (internal/modules/cjs/loader.js:723:23)
+2019-10-04T19:23:17.888663+00:00 app[worker.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2019-10-04T19:23:17.888664+00:00 app[worker.1]: at Module.load (internal/modules/cjs/loader.js:653:32)
+2019-10-04T19:23:17.888666+00:00 app[worker.1]: at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2019-10-04T19:23:17.888667+00:00 app[worker.1]: at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2019-10-04T19:23:17.888668+00:00 app[worker.1]: at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+2019-10-04T19:23:17.888670+00:00 app[worker.1]: at startup (internal/bootstrap/node.js:283:19)
+2019-10-04T19:23:17.888671+00:00 app[worker.1]: at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-10-04T19:36:40.795445+00:00 heroku[worker.1]: State changed from crashed to starting
+2019-10-04T19:36:43.299106+00:00 heroku[worker.1]: Starting process with command `node index.js`
+2019-10-04T19:36:44.028484+00:00 heroku[worker.1]: State changed from starting to up
+2019-10-04T19:36:45.850242+00:00 heroku[worker.1]: State changed from up to crashed
+2019-10-04T19:36:45.835363+00:00 heroku[worker.1]: Process exited with status 1
+2019-10-04T19:36:45.768121+00:00 app[worker.1]: /app/index.js:219
+2019-10-04T19:36:45.768140+00:00 app[worker.1]: <<<<<<< HEAD
+2019-10-04T19:36:45.768142+00:00 app[worker.1]: ^^
+2019-10-04T19:36:45.768143+00:00 app[worker.1]: 
+2019-10-04T19:36:45.768144+00:00 app[worker.1]: SyntaxError: Unexpected token <<
+2019-10-04T19:36:45.768146+00:00 app[worker.1]: at Module._compile (internal/modules/cjs/loader.js:723:23)
+2019-10-04T19:36:45.768148+00:00 app[worker.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+2019-10-04T19:36:45.768149+00:00 app[worker.1]: at Module.load (internal/modules/cjs/loader.js:653:32)
+2019-10-04T19:36:45.768150+00:00 app[worker.1]: at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+2019-10-04T19:36:45.768152+00:00 app[worker.1]: at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+2019-10-04T19:36:45.768153+00:00 app[worker.1]: at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
+2019-10-04T19:36:45.768155+00:00 app[worker.1]: at startup (internal/bootstrap/node.js:283:19)
+2019-10-04T19:36:45.768156+00:00 app[worker.1]: at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
