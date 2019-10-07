@@ -36,6 +36,7 @@
 //v58 - creeper aw man
 //v63 - undo mem release
 //v65 - fixing pushing to server
+//v66 - update &helpme
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -56,6 +57,10 @@ const helpembed = new Discord.RichEmbed()
 	.addField('&qualitybot', 'quality content', true)
 	.addField('&qualitybotv2', 'unoriginal content', true)
 	.addField('&kurwa', '**KURWA**', true)
+	.addField('&uwu', 'uwu-san', true)
+	.addField('&owo', 'owo-san', true)
+	.addField('&creeper', 'oh no not again', true)
+	.addField('&helpme', 'no', true)
 	.setImage('https://imgur.com/fiOcMRg.png')
 	.setTimestamp()
 	.setFooter('~Made by @JezzaR#6483~', 'https://imgur.com/fiOcMRg.png');
