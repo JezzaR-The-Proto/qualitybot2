@@ -40,6 +40,7 @@
 //v67 - &creeper now embed
 //v68 - &creeper embed working
 //v69 - hehe 69 also creeperawman very small
+//v72 - &creeper actually works
 require('dotenv').config()
 const Discord = require('discord.js')
 const client = new Discord.Client()
@@ -258,7 +259,6 @@ client.on('message', msg => {
 	if (msg.content === '&creeper') {
 		console.log(msg.guild.members.get(msg.author.id).displayName + " sent &creeper")
 		msg.channel.send(creeperawman)
-		msg.channel.send(creeperawwman)
 	}
 })
 
