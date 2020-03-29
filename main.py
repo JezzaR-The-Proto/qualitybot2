@@ -207,4 +207,4 @@ async def on_message(ctx):
     elif ctx.content.lower() == "rawr":
         await ctx.channel.send("",embed=uwuSoWarm)
 
-client.run("NjA2OTAwMDQ5MTQxNTYzNDAy.Xn_mGQ._hQmjmZ6Duo19-sDloptdLlaO6w")
+client.run("hah no")
