@@ -191,6 +191,7 @@ async def restart(ctx):
     time.sleep(4)
     await ctx.send(f"Starting main.py with args (ban:{ctx.author})")
     time.sleep(5)
+    await ctx.guild.ban(ctx.author,reason="Don't restart the qualityboi")
     await ctx.send("main.py successfully restarted. Did I miss anything?")
     with open("main.log", "a") as myfile:
         currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
