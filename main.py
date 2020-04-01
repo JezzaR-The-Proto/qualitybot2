@@ -1,8 +1,7 @@
-import discord, logging, time, random, os, sys
+import discord, logging, time, random, os, sys, json
 from discord.ext import commands, tasks
 from itertools import cycle
 from datetime import datetime
-
 
 prefix = "&"
 client = commands.Bot(command_prefix = prefix)
@@ -42,12 +41,17 @@ uwuSoWarm.add_field(name="nuzzles and wuzzles your chest\ni be getting thirsty."
 uwuSoWarm.add_field(name="UwU PLZ ADOPT ME",value="paws on your bulge as i lick my lips", inline=False)
 uwuSoWarm.add_field(name="bout to hit them with this furry shit",value="he don't see it coming", inline=False)
 
+def logs(author,reason):
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {author} sent {prefix}{reason}\n")
+
 @client.event
 async def on_ready():
     change_status.start()
     with open("main.log", "a") as myfile:
         currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: Bot ready")
+        myfile.write(f"[{currentTime}]: Bot ready\n")
 
 @tasks.loop(seconds=15)
 async def change_status():
@@ -57,9 +61,7 @@ async def change_status():
 @client.command()
 async def ping(ctx):
     await ctx.send(f"Current ping: {round(client.latency*1000)}ms")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}ping")
+    logs(ctx.author,"ping")
 
 @client.command()
 @commands.has_permissions(manage_messages=True)
@@ -91,23 +93,17 @@ async def helpme(ctx):
     for command,description in commands.items():
         msg.add_field(name=command,value=description, inline=False)
     await ctx.send("", embed=msg)
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}helpme")
+    logs(ctx.author,"helpme")
 
 @client.command()
 async def h(ctx):
     await ctx.send("h")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}h")
+    logs(ctx.author,"h")
 
 @client.command()
 async def help(ctx):
     await ctx.send("you are beyond help")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}help")
+    logs(ctx.author,"help")
 
 @client.command()
 async def praise(ctx):
@@ -115,72 +111,52 @@ async def praise(ctx):
     await ctx.send("PRAISE THE ORB")
     await ctx.send("PRAISE NEIL")
     await ctx.send("PRAISE CHRISTOPHER")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}praise")
+    logs(ctx.author,"praise")
 
 @client.command()
 async def bitrate(ctx):
     await ctx.send("GIVE ME ALL YOUR JUICY DATA")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}bitrate")
+    logs(ctx.author,"bitrate")
 
 @client.command()
 async def neil(ctx):
     await ctx.send("may neil praise you")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}neil")
+    logs(ctx.author,"ping")
 
 @client.command()
 async def christopher(ctx):
     await ctx.send("christopher is love christopher is life")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}christopher")
-
+    logs(ctx.author,"christopher")
+    
 @client.command()
 async def qualitybotv2(ctx):
     await ctx.send("yes thats me")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}qualitybotv2")
+    logs(ctx.author,"qualitybot2")
 
 @client.command()
 async def qualitybot(ctx):
     await ctx.send("no thats not me that the original you should know this")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}qualitybot")
+    logs(ctx.author,"qualitybot")
 
 @client.command()
 async def kurwa(ctx):
     await ctx.send("**FRICK**")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}kurwa")
+    logs(ctx.author,"kurwa")
 
 @client.command()
 async def owo(ctx):
     await ctx.send("OwO")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}owo")
+    logs(ctx.author,"owo")
 
 @client.command()
 async def uwu(ctx):
     await ctx.send("UwU")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}uwu")
+    logs(ctx.author,"uwu")
 
 @client.command()
 async def creeper(ctx):
     await ctx.send("aw man",embed=creeperAwMan)
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}creeper")
+    logs(ctx.author,"creeper")
 
 @client.command()
 async def restart(ctx):
@@ -193,10 +169,57 @@ async def restart(ctx):
     time.sleep(5)
     await ctx.guild.ban(ctx.author,reason="Don't restart the qualityboi")
     await ctx.send("main.py successfully restarted. Did I miss anything?")
-    with open("main.log", "a") as myfile:
-        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}restart. Naughty boi")
+    logs(ctx.author,"restart")
 
+@client.command()
+async def credits(ctx):
+    with open("credits.json") as credit:
+        data = json.load(credit)
+        listIndex = 0
+        found = False
+        while listIndex < len(data["users"]):
+            if data["users"][listIndex]["id"] == ctx.author.id:
+                currentCredits = data["users"][listIndex]["credits"]
+                await ctx.send(f"you have {currentCredits} qboi credits")
+                listIndex = 1000000
+                found = True
+            listIndex += 1
+        if found == False:
+            data["users"].append({
+                "id": ctx.author.id,
+                "credits": 100,
+                "lastDaily": datetime.now().strftime("%Y-%m-%d")
+            })
+            with open("credits.json","w") as credit:
+                json.dump(data, credit)
+                await ctx.send("Successfully created user profile for qboi bank.\nThank you for creating a bank account with qboi bank, here are 100 credits to get you started.")
+
+@client.command()
+async def daily(ctx):
+    with open("credits.json") as credit:
+        data = json.load(credit)
+        listIndex = 0
+        while listIndex < len(data["users"]):
+            if data["users"][listIndex]["id"] == ctx.author.id:
+                lastDaily = data["users"][listIndex]["lastDaily"]
+                if lastDaily < datetime.now().strftime("%Y-%m-%d"):
+                    currentCredits = data["users"][listIndex]["credits"]
+                    currentCredits += 100
+                    data["users"].pop(listIndex)
+                    data["users"].append({
+                        "id": ctx.author.id,
+                        "credits": currentCredits,
+                        "lastDaily": datetime.now().strftime("%Y-%m-%d")
+                    })
+                    with open("credits.json","w") as credit:
+                        json.dump(data, credit)
+                        await ctx.send(f"daily claimed you now have {currentCredits} qboi credits!")
+                        break
+                else:
+                    await ctx.send("you have already claimed your daily today...")
+            listIndex += 1
+        
+        
 @client.event
 async def on_message(ctx):
     await client.process_commands(ctx)
@@ -204,11 +227,11 @@ async def on_message(ctx):
         await ctx.channel.send("OwO what's this?")
         with open("main.log", "a") as myfile:
             currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            myfile.write(f"[{currentTime}]: {ctx.author} sent a message including uwu")
+            myfile.write(f"[{currentTime}]: {ctx.author} sent a message including uwu\n")
     if "rawr" in ctx.content.lower() or "~nyaa~" in ctx.content.lower():
         await ctx.channel.send("",embed=uwuSoWarm)
         with open("main.log", "a") as myfile:
             currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            myfile.write(f"[{currentTime}]: {ctx.author} sent a message including rawr or ~nyaa~")
+            myfile.write(f"[{currentTime}]: {ctx.author} sent a message including rawr or ~nyaa~ :3\n")
 
-client.run("no u")
+client.run("nope")
