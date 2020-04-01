@@ -1,56 +1,8 @@
-#=-=-=-=-=-=-=-= Changelog =-=-=-=-=-=-=-=
-#v0.23 - removed a line that crashed the .js and added changelog
-#v0.24 - added &bitrate
-#v0.25 - added &neil and &christopher
-#v0.26 - added &qualitybot and &qualitybotv2
-#v0.27 - updated &helps
-#v0.28 - removed &helps
-#v0.29 - added &kurwa
-#v0.30 - changed prefix to &
-#v0.31 - just testing
-#v0.32 - changed &ping to actual ping command and removed test
-#v0.33 - fixed &ping 
-#v0.34 - changed join message
-#v0.35 - added real &helpme
-#v0.36 - huge &helpme overhall
-#v0.37 - forgot to save v36...
-#v0.38 - more h
-#v0.39 - less h
-#v0.40 - added the classic &helpme back until i get embed perms.
-#v0.41 - didnt update v40 changelog...
-#v0.42 - &helpme spams every command and breaks everything. Removed.
-#v0.43 - added ms to &ping and removed some unnessasary lines in &helpme.
-#v0.44 - added &creeper.							aw man
-#v0.45 - fixed some grammar in &creeper and added it to &helpme
-#v0.46 - removed &creeper - caused too much lag
-#v0.47 - enabled &helpme
-#v0.48 - removed &creeper from help
-#v0.49 - added needed perms for &kick
-#v0.50 - added needed perms for &ban and updated needed perms for &kick
-#v0.51 - added console logs to each command.
-#v0.52 - bug fixes
-#v0.53 - moar bug fixes
-#v0.54 - meme release
-#v0.55 - updated meme release
-#v0.56 - mem release broke last time
-#v0.58 - creeper aw man
-#v0.63 - undo mem release
-#v0.65 - fixing pushing to server
-#v0.66 - update &helpme
-#v0.67 - &creeper now embed
-#v0.68 - &creeper embed working
-#v0.69 - hehe 69 also creeperawman very small
-#v0.72 - &creeper actually works
-#v0.74 - &rawr oh god help me
-#v0.75 - slight &rawr update
-#v0.76 - removed one darn space from uwuSoWarm
-#v0.77 - &rawr now just responds to all messages with rawr in them.
-#v1.04 - Python now because fuck js
-
-
-import discord, logging, time, random
+import discord, logging, time, random, os, sys
 from discord.ext import commands, tasks
 from itertools import cycle
+from datetime import datetime
+
 
 prefix = "&"
 client = commands.Bot(command_prefix = prefix)
@@ -93,7 +45,9 @@ uwuSoWarm.add_field(name="bout to hit them with this furry shit",value="he don't
 @client.event
 async def on_ready():
     change_status.start()
-    print(f"Bot logged in.")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: Bot ready")
 
 @tasks.loop(seconds=15)
 async def change_status():
@@ -103,7 +57,9 @@ async def change_status():
 @client.command()
 async def ping(ctx):
     await ctx.send(f"Current ping: {round(client.latency*1000)}ms")
-    print(f"{ctx.author} sent {prefix}ping")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}ping")
 
 @client.command()
 @commands.has_permissions(manage_messages=True)
@@ -130,21 +86,28 @@ async def helpme(ctx):
     commands["uwu"]="uwu-chan"
     commands["creeper"]="aw man"
     commands["rawr"]="x3 nuzzles"
+    commands["restart"]="oh no you found the secret command"
     msg=discord.Embed(title='QualityBotV2', description="Written by JezzaR The Protogen#6483 using Discord.py because heck js",color=0x00ff99)
     for command,description in commands.items():
         msg.add_field(name=command,value=description, inline=False)
     await ctx.send("", embed=msg)
-    print(f"{ctx.author} sent {prefix}helpme")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}helpme")
 
 @client.command()
 async def h(ctx):
     await ctx.send("h")
-    print(f"{ctx.author} sent {prefix}h")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}h")
 
 @client.command()
 async def help(ctx):
     await ctx.send("you are beyond help")
-    print(f"{ctx.author} sent {prefix}help")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}help")
 
 @client.command()
 async def praise(ctx):
@@ -152,59 +115,99 @@ async def praise(ctx):
     await ctx.send("PRAISE THE ORB")
     await ctx.send("PRAISE NEIL")
     await ctx.send("PRAISE CHRISTOPHER")
-    print(f"{ctx.author} sent {prefix}praise")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}praise")
 
 @client.command()
 async def bitrate(ctx):
     await ctx.send("GIVE ME ALL YOUR JUICY DATA")
-    print(f"{ctx.author} sent {prefix}bitrate")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}bitrate")
 
 @client.command()
 async def neil(ctx):
     await ctx.send("may neil praise you")
-    print(f"{ctx.author} sent {prefix}neil")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}neil")
 
 @client.command()
 async def christopher(ctx):
     await ctx.send("christopher is love christopher is life")
-    print(f"{ctx.author} sent {prefix}christopher")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}christopher")
 
 @client.command()
 async def qualitybotv2(ctx):
     await ctx.send("yes thats me")
-    print(f"{ctx.author} sent {prefix}qualitybotv2")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}qualitybotv2")
 
 @client.command()
 async def qualitybot(ctx):
     await ctx.send("no thats not me that the original you should know this")
-    print(f"{ctx.author} sent {prefix}qualitybot")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}qualitybot")
 
 @client.command()
 async def kurwa(ctx):
     await ctx.send("**FRICK**")
-    print(f"{ctx.author} sent {prefix}kurwa")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}kurwa")
 
 @client.command()
 async def owo(ctx):
     await ctx.send("OwO")
-    print(f"{ctx.author} sent {prefix}owo")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}owo")
 
 @client.command()
 async def uwu(ctx):
     await ctx.send("UwU")
-    print(f"{ctx.author} sent {prefix}uwu")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}uwu")
 
 @client.command()
 async def creeper(ctx):
     await ctx.send("aw man",embed=creeperAwMan)
-    print(f"{ctx.author} sent {prefix}creeper")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}creeper")
+
+@client.command()
+async def restart(ctx):
+    await ctx.send("Restarting main.py")
+    time.sleep(1)
+    PID = random.randint(500,5000)
+    await ctx.send(f"Ending Process with PID {PID}; NAME Git CMD")
+    time.sleep(4)
+    await ctx.send(f"Starting main.py with args (ban:{ctx.author})")
+    time.sleep(5)
+    await ctx.send("main.py successfully restarted. Did I miss anything?")
+    with open("main.log", "a") as myfile:
+        currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        myfile.write(f"[{currentTime}]: {ctx.author} sent {prefix}restart. Naughty boi")
 
 @client.event
 async def on_message(ctx):
     await client.process_commands(ctx)
-    if ctx.content.lower() == "uwu":
+    if "uwu" in ctx.content.lower():
         await ctx.channel.send("OwO what's this?")
-    elif ctx.content.lower() == "rawr":
+        with open("main.log", "a") as myfile:
+            currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            myfile.write(f"[{currentTime}]: {ctx.author} sent a message including uwu")
+    if "rawr" in ctx.content.lower() or "~nyaa~" in ctx.content.lower():
         await ctx.channel.send("",embed=uwuSoWarm)
+        with open("main.log", "a") as myfile:
+            currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            myfile.write(f"[{currentTime}]: {ctx.author} sent a message including rawr or ~nyaa~")
 
-client.run("hah no")
+client.run("no u")
