@@ -1,10 +1,11 @@
-import discord, logging, time, random, os, sys, json
+import discord, logging, time, random, os, sys, json, shutil
 from discord.ext import commands, tasks
 from itertools import cycle
 from datetime import datetime
 
 prefix = "&"
 client = commands.Bot(command_prefix = prefix)
+currentFolder = os.path.dirname(os.path.realpath(__file__))
 status = cycle(["Qualityboi","Watching for commands &helpme","Ready for action!"])
 logger = logging.getLogger('discord')
 logger.setLevel(logging.INFO)
@@ -84,6 +85,7 @@ def chargeAccount(uid,amount):
 @client.event
 async def on_ready():
     change_status.start()
+    shutil.copy2(currentFolder + os.sep + "credits.json",currentFolder + os.sep + "credits.json.bak")
     with open("main.log", "a") as myfile:
         currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         myfile.write(f"[{currentTime}]: Bot ready\n")
