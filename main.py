@@ -46,6 +46,41 @@ def logs(author,reason):
         currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         myfile.write(f"[{currentTime}]: {author} sent {prefix}{reason}\n")
 
+def createUser(uid):
+    with open("credits.json") as credit:
+        data = json.load(credit)
+    data["users"].append({
+        "id": uid,
+        "credits": 100,
+        "lastDaily": datetime.now().strftime("%Y-%m-%d")
+    })
+    with open("credits.json","w") as credit:
+        json.dump(data, credit)
+
+def chargeAccount(uid,amount):
+    with open("credits.json") as credit:
+        data = json.load(credit)
+        listIndex = 0
+        while listIndex < len(data["users"]):
+            if data["users"][listIndex]["id"] == uid:
+                lastDaily = data["users"][listIndex]["lastDaily"]
+                currentCredits = data["users"][listIndex]["credits"]
+                if currentCredits >= amount:
+                    currentCredits -= amount
+                    data["users"].pop(listIndex)
+                    data["users"].append({
+                        "id": uid,
+                        "credits": currentCredits,
+                        "lastDaily": lastDaily
+                    })
+                    with open("credits.json","w") as credit:
+                        json.dump(data, credit)
+                        return 0
+                else:
+                    return 1
+            else:
+                return 2
+
 @client.event
 async def on_ready():
     change_status.start()
@@ -185,6 +220,88 @@ async def credits(ctx):
                 found = True
             listIndex += 1
         if found == False:
+            createUser(ctx.author.id)
+            await ctx.send("Successfully created user profile for qboi bank.\nThank you for creating a bank account with qboi bank, here are 100 credits to get you started.")
+
+@client.command()
+async def daily(ctx):
+    with open("credits.json") as credit:
+        data = json.load(credit)
+        listIndex = 0
+        while listIndex < len(data["users"]):
+            if data["users"][listIndex]["id"] == ctx.author.id:
+                lastDaily = data["users"][listIndex]["lastDaily"]
+                if lastDaily < datetime.now().strftime("%Y-%m-%d"):
+                    currentCredits = data["users"][listIndex]["credits"]
+                    currentCredits += 100
+                    data["users"].pop(listIndex)
+                    data["users"].append({
+                        "id": ctx.author.id,
+                        "credits": currentCredits,
+                        "lastDaily": datetime.now().strftime("%Y-%m-%d")
+                    })
+                    with open("credits.json","w") as credit:
+                        json.dump(data, credit)
+                        await ctx.send(f"daily claimed you now have {currentCredits} qboi credits!")
+                        break
+                else:
+                    await ctx.send("you have already claimed your daily today...")
+            else:
+                createUser(ctx.author.id)
+                await ctx.send("Successfully created user profile for qboi bank.\nThank you for creating a bank account with qboi bank, here are 100 credits to get you started.")
+            listIndex += 1
+        
+@client.command()
+async def shop(ctx, *item):
+    shopItem={}
+    shopItem["how to buy"]="use &buy then item"
+    shopItem["ping"]="ping someone once using their user id (100 credits)"
+    shopItem["qboi"]="buy qboi (10000000000000000 credits)"
+    msg=discord.Embed(title='QualityBoi Shop', description="BUY MY SHIT",color=0x00ff99)
+    for command,description in shopItem.items():
+        msg.add_field(name=command,value=description, inline=False)
+    await ctx.send("", embed=msg) 
+
+@client.command()
+async def buy(ctx, item, *pingArg):
+    if item == "qboi":
+        returnCode = chargeAccount(ctx.author.id,10000000000000000)
+        if returnCode == 0:
+            await ctx.send(f"oh god now im owned by someone else")
+        elif returnCode == 1:
+            await ctx.send(f"get outta here scammer you dont got enough qboi credits")
+        elif returnCode == 2:
+            createUser(ctx.author.id)
+            await ctx.send("Successfully created user profile for qboi bank.\nThank you for creating a bank account with qboi bank, here are 100 credits to get you started.")
+    elif item == "ping":
+        pingID = f"<@{pingArg[0]}>"
+        if len(pingArg[0]) < 18:
+            await ctx.send("lmao nice try thats not a proper userid")
+        else:
+            await ctx.send(pingID)
+            returnCode = chargeAccount(ctx.author.id,100)
+            if returnCode == 0:
+                await ctx.send(f"{pingID} on behalf of {ctx.author}")
+            elif returnCode == 1:
+                await ctx.send(f"get outta here scammer you dont got enough qboi credits")
+            elif returnCode == 2:
+                createUser(ctx.author.id)
+                await ctx.send("Successfully created user profile for qboi bank.\nThank you for creating a bank account with qboi bank, here are 100 credits to get you started.")
+
+@client.command()
+async def credits(ctx):
+    with open("credits.json") as credit:
+        data = json.load(credit)
+        listIndex = 0
+        found = False
+        while listIndex < len(data["users"]):
+            if data["users"][listIndex]["id"] == ctx.author.id:
+                currentCredits = data["users"][listIndex]["credits"]
+                await ctx.send(f"you have {currentCredits} qboi credits")
+                listIndex = 1000000
+                found = True
+            listIndex += 1
+        if found == False:
             data["users"].append({
                 "id": ctx.author.id,
                 "credits": 100,
@@ -234,4 +351,4 @@ async def on_message(ctx):
             currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             myfile.write(f"[{currentTime}]: {ctx.author} sent a message including rawr or ~nyaa~ :3\n")
 
-client.run("nope")
+client.run("lmao no")
