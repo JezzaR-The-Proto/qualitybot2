@@ -8,11 +8,11 @@ To run this you need to have Python 3.7 or later along with the following packag
 - ffmpeg (in your PATH too)
 
 ## Setup
-Clone the repo\
-Do "pip install discord.py youtube_dl" in cmd (probably a good idea to have administrator perms too)\
-Install ffmpeg into a folder and add the folder with "ffmpeg.exe" in it into your PATH environmental variable - Restart your PC.\
-Please, please, please, please make sure you have a folder called tmp with it or all music commands will not work.\
-Run main.py (I think thats everything?)
+- Clone the repo
+- Do "pip install discord.py youtube_dl" in cmd (probably a good idea to have administrator perms too)
+- Install ffmpeg into a folder and add the folder with "ffmpeg.exe" in it into your PATH environmental variable - Restart your PC.
+- Please, please, please, please make sure you have a folder called tmp with it or all music commands will not work.
+- Run main.py (I think thats everything?)
 
 ## Credits
 JezzaR The Proto - Code  
