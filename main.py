@@ -1,4 +1,4 @@
-import discord, logging, time, random, os, sys, json, shutil
+import discord, logging, time, random, os, sys, json, shutil, youtube_dl, subprocess
 from discord.ext import commands, tasks
 from itertools import cycle
 from datetime import datetime
@@ -118,7 +118,7 @@ async def helpme(ctx):
     commands["bitrate"]="uwu bitrate-san"
     commands["neil"]="neil"
     commands["christopher"]="christopher"
-    commands["qualitybotv2"]="unoriginal content"
+    commands["qualityboi"]="unoriginal content"
     commands["qualitybot"]="quality content"
     commands["**kurwa**"]="**FRICK**"
     commands["owo"]="owo-san"
@@ -162,17 +162,17 @@ async def bitrate(ctx):
 @client.command()
 async def neil(ctx):
     await ctx.send("may neil praise you")
-    logs(ctx.author,"ping")
+    logs(ctx.author,"neil")
 
 @client.command()
 async def christopher(ctx):
     await ctx.send("christopher is love christopher is life")
     logs(ctx.author,"christopher")
-    
+
 @client.command()
-async def qualitybotv2(ctx):
+async def qualityboi(ctx):
     await ctx.send("yes thats me")
-    logs(ctx.author,"qualitybot2")
+    logs(ctx.author,"qualityboi")
 
 @client.command()
 async def qualitybot(ctx):
@@ -199,12 +199,12 @@ async def creeper(ctx):
     await ctx.send("aw man",embed=creeperAwMan)
     logs(ctx.author,"creeper")
 
-@client.command()
+@client.command(aliases=["restar","shutdown","shutdow"])
 async def restart(ctx):
     await ctx.send("Restarting main.py")
     time.sleep(1)
     PID = random.randint(500,5000)
-    await ctx.send(f"Ending Process with PID {PID}; NAME Git CMD")
+    await ctx.send(f"Killing Process with PID {PID}; NAME main.py")
     time.sleep(4)
     await ctx.send(f"Starting main.py with args (ban:{ctx.author})")
     time.sleep(5)
@@ -215,16 +215,21 @@ async def restart(ctx):
 @client.command()
 async def credits(ctx):
     with open("credits.json") as credit:
+
         data = json.load(credit)
         listIndex = 0
         found = False
+
         while listIndex < len(data["users"]):
+
             if data["users"][listIndex]["id"] == ctx.author.id:
+
                 currentCredits = data["users"][listIndex]["credits"]
                 await ctx.send(f"you have {currentCredits} qboi credits")
-                listIndex = 1000000
                 found = True
+                break
             listIndex += 1
+
         if found == False:
             createUser(ctx.author.id)
             await ctx.send("Successfully created user profile for qboi bank.\nThank you for creating a bank account with qboi bank, here are 100 credits to get you started.")
@@ -232,10 +237,12 @@ async def credits(ctx):
 @client.command()
 async def daily(ctx):
     with open("credits.json") as credit:
+
         data = json.load(credit)
         listIndex = 0
         found = False
         while listIndex < len(data["users"]):
+
             if data["users"][listIndex]["id"] == ctx.author.id:
                 lastDaily = data["users"][listIndex]["lastDaily"]
                 if lastDaily < datetime.now().strftime("%Y-%m-%d"):
@@ -247,21 +254,25 @@ async def daily(ctx):
                         "credits": currentCredits,
                         "lastDaily": datetime.now().strftime("%Y-%m-%d")
                     })
+
                     found = True
                     with open("credits.json","w") as credit:
+
                         json.dump(data, credit)
                         await ctx.send(f"daily claimed you now have {currentCredits} qboi credits!")
                         break
                 else:
+
                     await ctx.send("you have already claimed your daily today...")
                     found = True
                     break
+
             listIndex += 1
+
         if found == False:
             createUser(ctx.author.id)
             await ctx.send("Successfully created user profile for qboi bank.\nThank you for creating a bank account with qboi bank, here are 100 credits to get you started.")
-            
-        
+
 @client.command()
 async def shop(ctx, *item):
     shopItem={}
@@ -269,32 +280,43 @@ async def shop(ctx, *item):
     shopItem["ping"]="ping someone once using their user id (100 credits)"
     shopItem["qboi"]="buy qboi (10000000000000000 credits)"
     msg=discord.Embed(title='QualityBoi Shop', description="BUY MY SHIT",color=0x00ff99)
+
     for command,description in shopItem.items():
         msg.add_field(name=command,value=description, inline=False)
-    await ctx.send("", embed=msg) 
+
+    await ctx.send("", embed=msg)
 
 @client.command()
 async def buy(ctx, item, *pingArg):
     if item == "qboi":
+
         returnCode = chargeAccount(ctx.author.id,10000000000000000)
         if returnCode == 0:
             await ctx.send(f"oh god now im owned by someone else")
+
         elif returnCode == 1:
             await ctx.send(f"get outta here scammer you dont got enough qboi credits")
+
         elif returnCode == 2:
             createUser(ctx.author.id)
             await ctx.send("Successfully created user profile for qboi bank.\nThank you for creating a bank account with qboi bank, here are 100 credits to get you started.")
+
     elif item == "ping":
         pingID = f"<@{pingArg[0]}>"
-        if len(pingArg[0]) < 18:
+
+        if len(pingArg[0]) != 18:
             await ctx.send("lmao nice try thats not a proper userid")
+
         else:
             await ctx.send(pingID)
             returnCode = chargeAccount(ctx.author.id,100)
+
             if returnCode == 0:
                 await ctx.send(f"{pingID} on behalf of {ctx.author}")
+
             elif returnCode == 1:
                 await ctx.send(f"get outta here scammer you dont got enough qboi credits")
+
             elif returnCode == 2:
                 createUser(ctx.author.id)
                 await ctx.send("Successfully created user profile for qboi bank.\nThank you for creating a bank account with qboi bank, here are 100 credits to get you started.")
@@ -302,17 +324,21 @@ async def buy(ctx, item, *pingArg):
 @client.command()
 async def pay(ctx, reciever, payamount):
     await ctx.send(f"paying {payamount} qboi credits to {reciever}")
+
     reciever = reciever.replace("<","")
     reciever = reciever.replace("@","")
     reciever = reciever.replace(">","")
     reciever = reciever.replace("!","")
+
     returnCode = chargeAccount(ctx.author.id,payamount)
     if returnCode == 0:
         await ctx.send(f"charged {ctx.author} {payamount} qboi credits")
+
         with open("credits.json") as credit:
             data = json.load(credit)
             listIndex = 0
             while listIndex < len(data["users"]):
+
                 if data["users"][listIndex]["id"] == int(reciever):
                     lastDaily = data["users"][listIndex]["lastDaily"]
                     currentCredits = data["users"][listIndex]["credits"]
@@ -323,30 +349,98 @@ async def pay(ctx, reciever, payamount):
                         "credits": int(currentCredits),
                         "lastDaily": lastDaily
                     })
+
                     with open("credits.json","w") as credit:
                         json.dump(data, credit)
                         await ctx.send(f"given {reciever} {payamount} qboi credits")
                         return
                 listIndex += 1
+
     elif returnCode == 1:
         await ctx.send(f"get outta here scammer you dont got enough qboi credits")
+
     elif returnCode == 2:
         await ctx.send("bruh you cant send money if you dont have an account")
         createUser(ctx.author.id)
         await ctx.send("there you go there is an account for you it has 100 credits")
 
+@client.command()
+async def connect(ctx):
+    connectChannel = ctx.guild.voice_channels
+
+    for channel in connectChannel:
+        await channel.connect(timeout=120,reconnect=True)
+        break
+
+@client.command()
+async def disconnect(ctx):
+    disconnected=False
+
+    for channel in client.voice_clients:
+        if(channel.guild == ctx.guild):
+            await channel.disconnect()
+            disconnected = True
+
+    if disconnected == False:
+        await ctx.send("I am not connected to any voice channel on this server!")
+
+@client.command()
+async def play(ctx, url):
+    ydl = youtube_dl.YoutubeDL({'outtmpl': '%(id)s%(ext)s'})
+
+    with ydl:
+        result = ydl.extract_info(
+            url,
+            download=False
+        )
+
+    if 'entries' in result:
+        video = result['entries'][0]
+    else:
+        video = result
+    videoMins = video["duration"]/60
+    if videoMins > 10:
+        await ctx.send("video too long. more than 10 mins")
+        return
+
+    await ctx.send("downloading song, be patient")
+    os.system(f'cd tmp && py -m youtube_dl --ignore-errors -x --audio-format mp3 {url}')
+    songFile = os.listdir("tmp")
+    shutil.copy2(currentFolder + os.sep + "tmp" + os.sep + songFile[0], currentFolder + os.sep + "song.mp3")
+    os.remove(currentFolder + os.sep + "tmp" + os.sep + songFile[0])
+
+    await ctx.send("song downloaded now playing")
+    connectChannel = ctx.guild.voice_channels
+    connected = False
+    for channel in client.voice_clients:
+        if channel.guild == ctx.guild:
+            print(f"already connected to {channel.guild}")
+            connected = True
+            vc = channel
+    if connected == False:
+        for channel in connectChannel:
+            if channel.guild == ctx.guild:
+                vc = await channel.connect(timeout=120,reconnect=True)
+                connected = True
+                break
+    if connected:
+        vc.play(discord.FFmpegPCMAudio("song.mp3"), after=lambda e: print("song finished"))
+
+
 @client.event
 async def on_message(ctx):
     await client.process_commands(ctx)
+
     if "uwu" in ctx.content.lower():
         await ctx.channel.send("OwO what's this?")
         with open("main.log", "a") as myfile:
             currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             myfile.write(f"[{currentTime}]: {ctx.author} sent a message including uwu\n")
+
     if "rawr" in ctx.content.lower() or "~nyaa~" in ctx.content.lower():
         await ctx.channel.send("",embed=uwuSoWarm)
         with open("main.log", "a") as myfile:
             currentTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             myfile.write(f"[{currentTime}]: {ctx.author} sent a message including rawr or ~nyaa~ :3\n")
 
-client.run("imagine if i left the bot token here @coffeepanda0")
+client.run("how about you dont")

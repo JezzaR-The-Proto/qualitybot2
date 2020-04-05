@@ -1,0 +1,50 @@
+=-=-=-=-=-=-=-= Changelog =-=-=-=-=-=-=-=
+v0.23 - removed a line that crashed the .js and added changelog
+v0.24 - added &bitrate
+v0.25 - added &neil and &christopher
+v0.26 - added &qualitybot and &qualitybotv2
+v0.27 - updated &helps
+v0.28 - removed &helps
+v0.29 - added &kurwa
+v0.30 - changed prefix to &
+v0.31 - just testing
+v0.32 - changed &ping to actual ping command and removed test
+v0.33 - fixed &ping 
+v0.34 - changed join message
+v0.35 - added real &helpme
+v0.36 - huge &helpme overhall
+v0.37 - forgot to save v36...
+v0.38 - more h
+v0.39 - less h
+v0.40 - added the classic &helpme back until i get embed perms.
+v0.41 - didnt update v40 changelog...
+v0.42 - &helpme spams every command and breaks everything. Removed.
+v0.43 - added ms to &ping and removed some unnessasary lines in &helpme.
+v0.44 - added &creeper.							aw man
+v0.45 - fixed some grammar in &creeper and added it to &helpme
+v0.46 - removed &creeper - caused too much lag
+v0.47 - enabled &helpme
+v0.48 - removed &creeper from help
+v0.49 - added needed perms for &kick
+v0.50 - added needed perms for &ban and updated needed perms for &kick
+v0.51 - added console logs to each command.
+v0.52 - bug fixes
+v0.53 - moar bug fixes
+v0.54 - meme release
+v0.55 - updated meme release
+v0.56 - mem release broke last time
+v0.58 - creeper aw man
+v0.63 - undo mem release
+v0.65 - fixing pushing to server
+v0.66 - update &helpme
+v0.67 - &creeper now embed
+v0.68 - &creeper embed working
+v0.69 - hehe 69 also creeperawman very small
+v0.72 - &creeper actually works
+v0.74 - &rawr oh god help me
+v0.75 - slight &rawr update
+v0.76 - removed one darn space from uwuSoWarm
+v0.77 - &rawr now just responds to all messages with rawr in them.
+v1.04 - Python now because fuck js
+v1.07 - rawr is now rawr and ~nyaa~ & all changelogs moved to change.log
+v2 - MUSIC - Can now play music, no queue but will be adding that later.
