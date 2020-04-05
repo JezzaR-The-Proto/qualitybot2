@@ -15,8 +15,7 @@ Please, please, please, please make sure you have a folder called tmp with it or
 Run main.py (I think thats everything?)
 
 ## Credits
-JezzaR The Proto - Code.
-Google - Docs for literally everything.
+JezzaR The Proto - Code
 
 ## Invite Link (May not always be on): 
 https://discordapp.com/api/oauth2/authorize?client_id=606900049141563402&permissions=3176454&scope=bot
