@@ -6,6 +6,7 @@ To run this you need to have Python 3.7 or later along with the following packag
 - discord.py
 - youtube_dl
 - ffmpeg (in your PATH too)
+- At least 11GB of storage (Keeps upto 10GB of previously played music (Yes that is how i've done the music command (Yes it does download music then play it)))
 
 ## Setup
 - Clone the repo
