@@ -34,7 +34,7 @@ request==2019.4.13
 requests==2.21.0
 six==1.14.0
 soupsieve==1.9.5
-urllib3==1.24.3
+urllib3==1.26.5
 websockets==8.1
 wrapt==1.11.2
 yarl==1.4.2
